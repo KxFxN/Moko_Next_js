@@ -69,7 +69,7 @@ export default function Page() {
                     className="shopee max-w-[100px] md:max-w-[125px] lg:max-w-[100px] xl:max-w-[125px]"
                   >
                     <Image
-                      src="/image/Shop/Frame 65.png"
+                      src="/image/shop/Shopee.png"
                       alt=""
                       width={200}
                       height={50}
@@ -80,7 +80,7 @@ export default function Page() {
                     className="lazada max-w-[100px] md:max-w-[125px] lg:max-w-[100px] xl:max-w-[125px]"
                   >
                     <Image
-                      src="/image/shop/Rectangle 227.png"
+                      src="/image/shop/Lazada.png"
                       alt=""
                       width={200}
                       height={50}
@@ -333,7 +333,7 @@ export default function Page() {
           <ul className="flex flex-1 flex-col gap-5 py-10">
             <li className="flex items-center gap-7 text-white text-xl">
               <Image
-                src={"/image/Vector/Vector.png"}
+                src={"/image/vector/Vector.png"}
                 alt=""
                 width={30}
                 height={30}

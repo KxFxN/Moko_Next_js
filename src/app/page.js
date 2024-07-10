@@ -342,7 +342,7 @@ export default function Page() {
             </li>
             <li className="flex items-center gap-7 text-white text-xl">
               <Image
-                src={"/image/Vector/Vector.png"}
+                src={"/image/vector/Vector.png"}
                 alt=""
                 width={30}
                 height={30}
@@ -351,7 +351,7 @@ export default function Page() {
             </li>
             <li className="flex items-center gap-7 text-white text-xl">
               <Image
-                src={"/image/Vector/Vector.png"}
+                src={"/image/vector/Vector.png"}
                 alt=""
                 width={30}
                 height={30}
@@ -360,7 +360,7 @@ export default function Page() {
             </li>
             <li className="flex items-center gap-7 text-white text-xl">
               <Image
-                src={"/image/Vector/Vector.png"}
+                src={"/image/vector/Vector.png"}
                 alt=""
                 width={30}
                 height={30}

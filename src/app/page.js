@@ -17,7 +17,7 @@ export default function Page() {
 
       <main className=" px-5 md:px-10 lg:px-20 2xl:px-32">
         <section
-          className="margin-moko-custom moko relative h-[60vh] overflow-hidden bg-[#F2FCF7] max-[390px]:h-[80vh] md:h-[70vh] xl:h-[100vh]"
+          className="margin-moko-custom moko relative h-[60vh] overflow-hidden bg-[#F2FCF7] max-[390px]:h-[80vh] md:h-[70vh] lg:h-[100vh]"
           id="moko"
         >
           <div className="flex flex-col items-center text-center gap-5 pt-5 md:pt-10">
@@ -46,7 +46,7 @@ export default function Page() {
               และยังช่วยลดการระคายเคืองผิวที่เกิดจาก กระบวนการสัก
             </p>
           </div>
-          <div className="absolute left-0 top-0 w-[40%] md:w-[35%] xl:w-[30%] ">
+          <div className="absolute left-0 top-0 w-[40%] md:w-[35%] lg:w-[30%] ">
             <Image
               src={"/image/hero/Vector1.png"}
               alt=" "
@@ -54,7 +54,7 @@ export default function Page() {
               height={500}
             />
           </div>
-          <div className="absolute right-0 top-0 w-[40%] md:w-[35%] xl:w-[30%] 2xl:w-fit">
+          <div className="absolute right-0 top-0 w-[40%] md:w-[35%] lg:w-[30%] 2xl:w-fit">
             <Image
               src={"/image/hero/Vector.png"}
               alt=""
@@ -62,7 +62,7 @@ export default function Page() {
               height={500}
             />
           </div>
-          <div className="absolute -left-5 top-1/2 translate-y-[20%] w-[40%] md:-translate-y-[60%] xl:w-[35%] xl:-translate-y-[30%]">
+          <div className="absolute -left-5 top-1/2 translate-y-[20%] w-[40%] md:-translate-y-[60%] lg:w-[35%] lg:-translate-y-[30%]">
             <Image
               src={"/image/hero/hands-l.png"}
               alt=""
@@ -71,7 +71,7 @@ export default function Page() {
               className="w-full h-auto object-contain"
             />
           </div>
-          <div className="absolute -right-4 top-1/2 translate-y-[20%] w-[40%] md:-translate-y-[60%] xl:w-[35%] xl:-translate-y-[30%]">
+          <div className="absolute -right-4 top-1/2 translate-y-[20%] w-[40%] md:-translate-y-[60%] lg:w-[35%] lg:-translate-y-[30%]">
             <Image
               src={"/image/hero/hands-r.png"}
               alt=""
@@ -80,7 +80,7 @@ export default function Page() {
               className="w-full h-auto object-contain"
             />
           </div>
-          <div className="absolute top-1/2 -translate-y-[20%] right-1/2 translate-x-1/2 w-[40%] md:w-[35%] md:-translate-y-1/2 xl:w-[22%] xl:-translate-y-[30%]">
+          <div className="absolute top-1/2 -translate-y-[20%] right-1/2 translate-x-1/2 w-[40%] md:w-[35%] md:-translate-y-1/2 lg:w-[25%] lg:-translate-y-[30%] xl:w-[20%] ">
             <Image
               src={"/image/hero/Moko-product.png"}
               alt=""

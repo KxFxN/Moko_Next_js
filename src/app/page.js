@@ -91,7 +91,7 @@ export default function Page() {
         </section>
 
         <section id="product">
-          <div className="xl:py-14 ">
+          <div className="py-10 lg:py-14 ">
             <div className="flex flex-col lg:gap-10 lg:flex-row xl:gap-20 2xl:gap-40">
               <ProductDisplay />
 

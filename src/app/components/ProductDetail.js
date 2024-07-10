@@ -4,7 +4,7 @@ import Image from "next/image";
 function ProductDetail({ src, title, description, className }) {
   return (
     <div className={`flex items-center gap-4 ${className} `}>
-      <div className="relative flex-shrink-0 w-full max-w-[56px] md:max-w-[86px] lg:max-w-[70px] xl:max-w-[80px] 2xl:max-w-[100px]">
+      <div className="relative flex-shrink-0 w-full max-w-[56px] md:max-w-[70px] lg:max-w-[70px] xl:max-w-[80px] 2xl:max-w-[100px]">
         <Image
           src={src}
           alt={title}

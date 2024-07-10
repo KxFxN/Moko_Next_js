@@ -95,7 +95,7 @@ export default function Page() {
           <section className="margin-custom flex flex-col items-center bg-gradient-custom ">
             <h1 className="font-semibold text-[#761245] pb-14">ส่วนประกอบ</h1>
             <div className="flex flex-col items-center justify-center relative lg:flex-row ">
-              <div className="w-full md:flex md:justify-center lg:basis-3/5 lg:max-w-[450px] xl:max-w-[500px] 2xl:max-w-[600px] 2xl:basis-4/5">
+              <div className="w-full md:flex md:justify-center md:max-w-[400px] lg:basis-3/5 lg:max-w-[450px] xl:max-w-[500px] 2xl:max-w-[600px] 2xl:basis-4/5">
                 <Image
                   src="/image/component/Element product.png"
                   alt=""

@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-xl;
+  }
+
+  p {
+    @apply text-sm;
+  }
+
+  @screen md {
+    h1 {
+      @apply text-2xl;
+    }
+
+    p {
+      @apply text-sm;
+    }
+
+    input {
+      @apply text-base;
+    }
+
+    textarea {
+      @apply text-base;
+    }
+  }
+
+  @screen lg {
+    h1 {
+      @apply text-2xl;
+    }
+
+    p {
+      @apply text-sm;
+    }
+
+    input {
+      @apply text-base;
+    }
+
+    textarea {
+      @apply text-base;
+    }
+  }
+
+  @screen xl {
+    h1 {
+      @apply text-3xl;
+    }
+
+    p {
+      @apply text-lg leading-normal;
+    }
+
+    input {
+      @apply text-xl;
+    }
+
+    textarea {
+      @apply text-xl;
+    }
+  }
+  @screen 2xl {
+    h1 {
+      @apply text-6xl;
+    }
+
+    p {
+      @apply text-3xl leading-normal font-normal;
+    }
+
+    input {
+      @apply text-3xl;
+    }
+
+    textarea {
+      @apply text-3xl;
+    }
+  }
+}
+
+@layer components {
+  .margin-custom {
+    @apply -mx-5 px-5 py-10;
+  }
+
+  .margin-custom-slide {
+    @apply -mx-5 pt-20;
+  }
+
+  @screen md {
+    .margin-custom {
+      @apply -mx-10 px-10;
+    }
+
+    .margin-custom-slide {
+      @apply -mx-10;
+    }
+  }
+
+  @screen lg {
+    .margin-custom {
+      @apply -mx-20 px-20;
+    }
+
+    .margin-custom-slide {
+      @apply -mx-20;
+    }
+  }
+
+  @screen 2xl {
+    .margin-custom {
+      @apply -mx-32 px-32;
+    }
+
+    .margin-custom-slide {
+      @apply -mx-32;
+    }
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.Benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  text-align: center;
+}

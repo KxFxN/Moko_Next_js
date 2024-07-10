@@ -20,7 +20,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="py-5 md:flex md:items-center  md:px-24 md:gap-20">
+    <nav className=" py-5 md:flex md:items-center  md:px-24 md:gap-20">
       <div className="flex justify-between px-7 md:px-0 md:basis-1/5">
         <Link href="#product" className="max-w-[125px] 2xl:max-w-[200px]">
           <Image src="/image/Logo/Logo4.png" alt="" width={200} height={200} />

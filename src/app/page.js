@@ -16,17 +16,82 @@ export default function Page() {
       </header>
 
       <main className=" px-5 md:px-10 lg:px-20 2xl:px-32">
-        <section className="moko" id="moko">
-          <h1>MOKO Ink Restore+</h1>
-          <p>
-            ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแลรอยสักโดยเฉพาะ
-            และคืนความอ่อนเยาว์ด้วยส่วนผสมอันเป็นเอกลักษณ์เฉพาะตัว
-            และยังช่วยลดการระคายเคืองผิวที่เกิดจาก กระบวนการสัก
-          </p>
+        <section
+          className="margin-moko-custom moko relative h-[60vh] overflow-hidden bg-[#F2FCF7] max-[390px]:h-[80vh] md:h-[70vh] xl:h-[100vh]"
+          id="moko"
+        >
+          <div className="flex flex-col items-center text-center gap-5 pt-5 md:pt-10">
+            <h1 className=" md:hidden ">
+              MOKO <br /> Ink Restore+
+            </h1>
+            <h1 className="hidden md:flex">MOKO Ink Restore+</h1>
+            <p className=" md:hidden lg:text-lg">
+              ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแล
+              <br />
+              รอยสักโดยเฉพาะ
+              <br />
+              และคืนความอ่อนเยาว์ด้วยส่วนผสม
+              <br />
+              อันเป็นเอกลักษณ์เฉพาะตัว
+              <br />
+              และยังช่วยลดการระคายเคืองผิว
+              <br />
+              ที่เกิดจากกระบวนการสัก
+            </p>
+            <p className="hidden md:flex lg:text-lg">
+              ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแลรอยสักโดยเฉพาะ
+              <br />
+              และคืนความอ่อนเยาว์ด้วยส่วนผสมอันเป็นเอกลักษณ์เฉพาะตัว
+              <br />
+              และยังช่วยลดการระคายเคืองผิวที่เกิดจาก กระบวนการสัก
+            </p>
+          </div>
+          <div className="absolute left-0 top-0 w-[40%] md:w-[35%] xl:w-[30%] ">
+            <Image
+              src={"/image/hero/Vector1.png"}
+              alt=" "
+              width={500}
+              height={500}
+            />
+          </div>
+          <div className="absolute right-0 top-0 w-[40%] md:w-[35%] xl:w-[30%] 2xl:w-fit">
+            <Image
+              src={"/image/hero/Vector.png"}
+              alt=""
+              width={500}
+              height={500}
+            />
+          </div>
+          <div className="absolute -left-5 top-1/2 translate-y-[20%] w-[40%] md:-translate-y-[60%] xl:w-[35%] xl:-translate-y-[30%]">
+            <Image
+              src={"/image/hero/hands-l.png"}
+              alt=""
+              width={500}
+              height={500}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+          <div className="absolute -right-4 top-1/2 translate-y-[20%] w-[40%] md:-translate-y-[60%] xl:w-[35%] xl:-translate-y-[30%]">
+            <Image
+              src={"/image/hero/hands-r.png"}
+              alt=""
+              width={500}
+              height={500}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+          <div className="absolute top-1/2 -translate-y-[20%] right-1/2 translate-x-1/2 w-[40%] md:w-[35%] md:-translate-y-1/2 xl:w-[22%] xl:-translate-y-[30%]">
+            <Image
+              src={"/image/hero/Moko-product.png"}
+              alt=""
+              width={500}
+              height={500}
+            />
+          </div>
         </section>
 
         <section id="product">
-          <div className="py-14 ">
+          <div className="xl:py-14 ">
             <div className="flex flex-col lg:gap-10 lg:flex-row xl:gap-20 2xl:gap-40">
               <ProductDisplay />
 

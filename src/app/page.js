@@ -20,12 +20,12 @@ export default function Page() {
           className="margin-moko-custom moko relative h-[60vh] overflow-hidden bg-[#F2FCF7] max-[390px]:h-[80vh] md:h-[70vh] lg:h-[100vh]"
           id="moko"
         >
-          <div className="flex flex-col items-center text-center gap-5 pt-5 md:pt-10">
+          <div className="flex flex-col items-center text-center gap-5 pt-5 text-[#629C85] md:pt-10">
             <h1 className=" md:hidden ">
               MOKO <br /> Ink Restore+
             </h1>
             <h1 className="hidden md:flex">MOKO Ink Restore+</h1>
-            <p className=" md:hidden lg:text-lg">
+            <p className=" md:hidden lg:text-lg 2xl:text-2xl">
               ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแล
               <br />
               รอยสักโดยเฉพาะ
@@ -38,7 +38,7 @@ export default function Page() {
               <br />
               ที่เกิดจากกระบวนการสัก
             </p>
-            <p className="hidden md:flex lg:text-lg">
+            <p className="hidden md:flex lg:text-lg 2xl:text-2xl">
               ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแลรอยสักโดยเฉพาะ
               <br />
               และคืนความอ่อนเยาว์ด้วยส่วนผสมอันเป็นเอกลักษณ์เฉพาะตัว
@@ -101,7 +101,7 @@ export default function Page() {
                 </div>
 
                 <div className="py-4">
-                  <p className="text-base text-[#386C5F] md:text-lg xl:text-2xl 2xl:text-5xl 2xl:leading-tight">
+                  <p className="text-base text-[#386C5F] md:text-lg xl:text-xl 2xl:text-3xl 2xl:leading-tight">
                     Skin Rejuvenation Gel Cream สกิน รีจูวิเนชั่น เจล ครีม{" "}
                     <br />
                     Moisture The Skin With Vitamin E, B5, Witch Hazel <br />

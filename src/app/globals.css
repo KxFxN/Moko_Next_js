@@ -84,6 +84,10 @@
 }
 
 @layer components {
+  .margin-navbar-scroll {
+    @apply pt-16 scroll-mt-16;
+  }
+
   .margin-moko-custom {
     @apply -mx-5;
   }

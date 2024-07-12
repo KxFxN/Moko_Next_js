@@ -10,8 +10,12 @@ function Navbar() {
   const handleScroll = useCallback((e, id) => {
     e.preventDefault();
     const element = document.getElementById(id);
+    const navbarHeight = document.querySelector("nav").offsetHeight;
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      window.scrollTo({
+        top: element.offsetTop - navbarHeight,
+        behavior: "smooth",
+      });
     }
   }, []);
 
@@ -20,12 +24,15 @@ function Navbar() {
   };
 
   return (
-    <nav className=" py-3 md:flex md:items-center  md:px-24 md:gap-20">
+    <nav className="h-16 py-3 fixed w-full z-10 bg-white md:flex md:items-center  md:px-24 md:gap-20">
       <div className="flex justify-between px-7 md:px-0 md:basis-1/5">
-        <Link href="#product" className="max-w-[125px] 2xl:max-w-[200px]">
+        <Link
+          href="#moko"
+          onClick={(e) => handleScroll(e, "moko")}
+          className="max-w-[125px] 2xl:max-w-[200px]"
+        >
           <Image src="/image/Logo/Logo4.png" alt="" width={200} height={200} />
         </Link>
-
         <button
           className="md:hidden cursor-pointer text-[#629c85] focus:outline-none"
           onClick={toggleMenu}

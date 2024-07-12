@@ -14,15 +14,15 @@ import ParallaxSection from "./components/ParallaxSection";
 export default function Page() {
   return (
     <>
-      <header className="fixed w-full z-10 bg-white">
+      <header>
         <Navbar />
       </header>
 
-      <main className=" px-5 md:px-10 lg:px-20 2xl:px-32">
+      <main className="px-5 pt-16 md:px-10 lg:px-20 2xl:px-32">
         {/* bg-[#F2FCF7] bg-gradient-to-b from-[rgb(26,82,72)] from-10% via-[rgb(27,106,127)] via-30% to-[rgb(28,139,200)] to-90%  bg-gradient-parallax*/}
         {/* <ParallaxSection /> */}
         <section
-          className="margin-moko-custom moko relative h-[60vh] overflow-hidden bg-[#F2FCF7]   max-[390px]:h-[80vh] md:h-[70vh] lg:h-[100vh] "
+          className="moko margin-moko-custom relative h-[60vh] overflow-hidden bg-[#F2FCF7]   max-[390px]:h-[80vh] md:h-[70vh] lg:h-[100vh] "
           id="moko"
         >
           <div className="flex flex-col items-center text-center gap-5 pt-5 text-[#629C85] md:pt-10">

@@ -20,7 +20,7 @@ export default function Page() {
 
       <main className="px-5 pt-16 md:px-10 lg:px-20 2xl:px-32">
         {/* bg-[#F2FCF7] bg-gradient-to-b from-[rgb(26,82,72)] from-10% via-[rgb(27,106,127)] via-30% to-[rgb(28,139,200)] to-90%  bg-gradient-parallax*/}
-        <ParallaxSection />
+        {/* <ParallaxSection /> */}
         <section
           className="moko margin-moko-custom relative h-[60vh] overflow-hidden bg-[#F2FCF7]   max-[390px]:h-[80vh] md:h-[70vh] lg:h-[100vh] "
           id="moko"

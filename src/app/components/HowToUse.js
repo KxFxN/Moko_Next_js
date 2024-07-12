@@ -11,7 +11,11 @@ const ToggleSection = ({ title, children }) => {
         className="flex justify-between items-center border-b-[1px] 2xl:pb-10 2xl:border-b-[3px] "
         onClick={() => setIsOpen(!isOpen)}
       >
-        <p className={`text-xl font-bold ${isOpen ? "text-[#00B48E]" : ""} 2xl:text-4xl`}>
+        <p
+          className={`text-xl font-normal ${
+            isOpen ? "text-[#00B48E]" : ""
+          } 2xl:text-4xl`}
+        >
           {title}
         </p>
         <IoIosArrowDown size={40} className={isOpen ? "rotate-180" : ""} />

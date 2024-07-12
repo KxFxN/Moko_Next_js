@@ -22,7 +22,7 @@ export default function Page() {
         {/* bg-[#F2FCF7] bg-gradient-to-b from-[rgb(26,82,72)] from-10% via-[rgb(27,106,127)] via-30% to-[rgb(28,139,200)] to-90%  bg-gradient-parallax*/}
         {/* <ParallaxSection /> */}
         <section
-          className="moko margin-moko-custom relative h-[80vh] overflow-hidden bg-[#F2FCF7] min-[400px]:h-[65vh] md:h-[70vh] lg:h-[100vh] "
+          className="moko margin-moko-custom relative h-[90vh] overflow-hidden bg-[#F2FCF7] min-[400px]:h-[65vh] md:h-[70vh] lg:h-[100vh] "
           id="moko"
         >
           <div className="flex flex-col items-center text-center gap-5 pt-5 text-[#629C85] md:pt-10">

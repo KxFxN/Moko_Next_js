@@ -1,8 +1,8 @@
-import { Inter, IBM_Plex_Sans_Thai } from "next/font/google";
+import { Inter, Kanit } from "next/font/google";
 import "./globals.css";
 
-const inter = IBM_Plex_Sans_Thai({
-  weight: ["300","400","500","600", "700"],
+const inter = Kanit({
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
   style: ["normal"],
   subsets: ["latin"],
   display: "swap",

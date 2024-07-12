@@ -51,7 +51,7 @@ function Navbar() {
             <Link
               href={"#product"}
               onClick={(e) => handleScroll(e, "product")}
-              className="text-[#629c85] hover:opacity-75 px-3 py-2 rounded-md text-sm font-medium 2xl:text-2xl"
+              className="w-full text-[#629c85] hover:opacity-75 px-3 py-2 rounded-md text-sm font-medium 2xl:text-2xl"
             >
               Product
             </Link>
@@ -60,7 +60,7 @@ function Navbar() {
             <Link
               href={"#review"}
               onClick={(e) => handleScroll(e, "review")}
-              className="text-[#629c85] hover:opacity-75  px-3 py-2 rounded-md text-sm font-medium 2xl:text-2xl"
+              className="w-full text-[#629c85] hover:opacity-75  px-3 py-2 rounded-md text-sm font-medium 2xl:text-2xl"
             >
               Reviewer
             </Link>
@@ -69,7 +69,7 @@ function Navbar() {
             <Link
               href={"#contact"}
               onClick={(e) => handleScroll(e, "contact")}
-              className="text-[#629c85] hover:opacity-75  px-3 py-2 rounded-md text-sm font-medium 2xl:text-2xl"
+              className="w-full text-[#629c85] hover:opacity-75  px-3 py-2 rounded-md text-sm font-medium 2xl:text-2xl"
             >
               Contact us
             </Link>

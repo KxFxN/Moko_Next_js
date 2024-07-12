@@ -46,7 +46,7 @@ function Navbar() {
           isOpen ? "block" : "hidden"
         } py-5 md:flex md:py-0  md:basis-4/5 `}
       >
-        <ul className="md:flex md:w-full md:justify-between">
+        <ul className="w-full bg-white md:flex md:justify-between">
           <li className="px-3 py-2">
             <Link
               href={"#product"}

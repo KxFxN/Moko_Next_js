@@ -134,8 +134,23 @@ export default function Page() {
                   550 THB
                 </div>
                 <div className="flex gap-3">
-                  <a
-                    href="#"
+                  <Link
+                    href="https://shop.line.me/@999ctiun"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shopee max-w-[100px] md:max-w-[125px] lg:max-w-[100px] xl:max-w-[125px]"
+                  >
+                    <Image
+                      src="/image/shop/Shope.png"
+                      alt=""
+                      width={200}
+                      height={50}
+                    />
+                  </Link>
+                  <Link
+                    href="https://shopee.co.th/mokothailand"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="shopee max-w-[100px] md:max-w-[125px] lg:max-w-[100px] xl:max-w-[125px]"
                   >
                     <Image
@@ -144,9 +159,11 @@ export default function Page() {
                       width={200}
                       height={50}
                     />
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    href="https://www.lazada.co.th/shop/moko-thailand"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="lazada max-w-[100px] md:max-w-[125px] lg:max-w-[100px] xl:max-w-[125px]"
                   >
                     <Image
@@ -155,7 +172,7 @@ export default function Page() {
                       width={200}
                       height={50}
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -442,30 +459,30 @@ export default function Page() {
             <p className="text-white text-xl">Follow Us</p>
             <div className="flex flex-row justify-between items-center pt-5">
               <div className="flex flex-row items-center gap-5">
-                <a href="#">
+                <Link href="https://www.facebook.com/MOKO.official.th?locale=nl_NL">
                   <Image
                     src="/image/vector/ic_baseline-facebook.png"
                     alt=""
                     width={40}
                     height={40}
                   />
-                </a>
-                <a href="#">
+                </Link>
+                <Link href="https://www.instagram.com/moko_official/">
                   <Image
                     src="/image/vector/mage_instagram-circle.png"
                     alt=""
                     width={40}
                     height={40}
                   />
-                </a>
-                <a href="#">
+                </Link>
+                <Link href="https://www.tiktok.com/@moko.official.th">
                   <Image
                     src="/image/vector/mage_tiktok-circle.png"
                     alt=""
                     width={40}
                     height={40}
                   />
-                </a>
+                </Link>
               </div>
               <h2 className="text-2xl text-white pr-6">Moko</h2>
             </div>

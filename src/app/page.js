@@ -131,7 +131,7 @@ export default function Page() {
                   </p>
                 </div>
                 <div className="text-xl text-[#00B48E] mb-4 xl:text-2xl xl:font-medium 2xl:text-5xl">
-                  550 THB
+                  599 THB
                 </div>
                 <div className="flex gap-3">
                   <Link

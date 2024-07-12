@@ -455,7 +455,7 @@ export default function Page() {
               <Link href={"#contact"}>CONTACT US</Link>
             </li>
           </ul>
-          <div className="flex-1 rounded-3xl p-5 bg-[#386C5F] lg:h-[50%]">
+          <div className="flex-1 max-w-[400px] rounded-3xl p-5 bg-[#386C5F] lg:h-[50%]">
             <p className="text-white text-xl">Follow Us</p>
             <div className="flex flex-row justify-between items-center pt-5">
               <div className="flex flex-row items-center gap-5">

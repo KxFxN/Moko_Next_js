@@ -434,7 +434,7 @@ export default function Page() {
                 width={30}
                 height={30}
               />
-              <Link href={"#product"}>PROUDCT</Link>
+              <Link href={"#product"}>PRODUCT</Link>
             </li>
             <li className="flex items-center gap-7 text-white text-xl">
               <Image

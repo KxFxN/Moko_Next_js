@@ -71,7 +71,7 @@ function Navbar() {
               onClick={(e) => handleScroll(e, "contact")}
               className="w-full text-[#629c85] hover:opacity-75  px-3 py-2 rounded-md text-sm font-medium 2xl:text-2xl"
             >
-              Contact us
+              Contact Us
             </Link>
           </li>
         </ul>

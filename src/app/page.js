@@ -195,45 +195,49 @@ export default function Page() {
                 <ProductDetail
                   src={"/image/component/Frame 164.png"}
                   title={"vitamin B5 & E"}
-                  description={
-                    "Vitamin B5 ช่วยสมานแผลและเร่งการสร้างเนื้อเยื่อชั้นผิวใหม่ Vitamin E ต้านอนุมูลอิสระ ช่วยป้องกันผิวจากความเสียหายที่เกิดจากแสงแดด"
-                  }
                   className={
                     "lg:-translate-x-[15%] lg:-translate-y-[45%] xl:-translate-x-[10%]"
                   }
-                />
+                >
+                  Vitamin B5 ช่วยสมานแผลและเร่งการสร้างเนื้อเยื่อชั้นผิวใหม่
+                  <br />
+                  Vitamin E ต้านอนุมูลอิสระ
+                  ช่วยป้องกันผิวจากความเสียหายที่เกิดจากแสงแดด
+                </ProductDetail>
 
                 <ProductDetail
                   src={"/image/component/vitamin.png"}
                   title={"Shea Butter"}
-                  description={"ช่วยให้ผิวชุ่มชื่น พื้นบำรุงผิวให้เนียนนุ่ม"}
                   className={"lg:-translate-x-[0%] lg:-translate-y-[50%]"}
-                />
+                >
+                  ช่วยให้ผิวชุ่มชื่น พื้นบำรุงผิวให้เนียนนุ่ม
+                </ProductDetail>
 
                 <ProductDetail
                   src={"/image/component/rose.png"}
                   title={"Rose"}
-                  description={"ช่วยบำรุงเซลล์ผิวที่เสียให้กลับมาสมบูรณ์"}
                   className={"lg:translate-x-[10%] lg:-translate-y-[50%]"}
-                />
+                >
+                  ช่วยบำรุงเซลล์ผิวที่เสียให้กลับมาสมบูรณ์
+                </ProductDetail>
 
                 <ProductDetail
                   src={"/image/component/vitamin gold.png"}
                   title={"Witch Hazel"}
-                  description={
-                    "ช่วยกระตุ้นการสร้าง Elastin และ Collagen ใต้ผิวหนัง"
-                  }
                   className={"lg:-translate-x-[0%] lg:-translate-y-[45%]"}
-                />
+                >
+                  ช่วยกระตุ้นการสร้าง Elastin และ Collagen ใต้ผิวหนัง
+                </ProductDetail>
 
                 <ProductDetail
                   src={"/image/component/vitamin-e-gold.png"}
                   title={"Natural Herb"}
-                  description={
-                    "สารสกัดจากธรรมชาติ 7 ชนิด ช่วยลดการอักเสบ การแพ้ และการระคายเคียงผิว ได้แก่ ใบบัวบก , ไผ่น้ำญี่ปุ่น , สกูปแคป ,ชาเขียว ,รากชะเอม , ดอกคาโมมายล์ และ โรสแมรี่"
-                  }
                   className={"lg:-translate-x-[6%] lg:-translate-y-[35%]"}
-                />
+                >
+                  สารสกัดจากธรรมชาติ 7 ชนิด ช่วยลดการอักเสบ การแพ้
+                  และการระคายเคียงผิว <br /> ได้แก่ ใบบัวบก , ไผ่น้ำญี่ปุ่น ,
+                  สกูปแคป ,ชาเขียว ,รากชะเอม , ดอกคาโมมายล์ และ โรสแมรี่
+                </ProductDetail>
               </div>
             </div>
           </section>

@@ -10,7 +10,7 @@ function ProductDetail({ src, title, description, className }) {
           alt={title}
           width={100}
           height={100}
-          className="rounded-full object-cover"
+          className="rounded-full object-contain"
         />
       </div>
       <div>

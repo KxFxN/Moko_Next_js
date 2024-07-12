@@ -53,7 +53,7 @@ function Navbar() {
               onClick={(e) => handleScroll(e, "product")}
               className="text-[#629c85] hover:opacity-75 px-3 py-2 rounded-md text-sm font-medium 2xl:text-2xl"
             >
-              PRODUCT
+              Product
             </Link>
           </li>
           <li className="px-3 py-2">
@@ -62,7 +62,7 @@ function Navbar() {
               onClick={(e) => handleScroll(e, "review")}
               className="text-[#629c85] hover:opacity-75  px-3 py-2 rounded-md text-sm font-medium 2xl:text-2xl"
             >
-              REVIEWER
+              Reviewer
             </Link>
           </li>
           <li className="px-3 py-2">
@@ -71,7 +71,7 @@ function Navbar() {
               onClick={(e) => handleScroll(e, "contact")}
               className="text-[#629c85] hover:opacity-75  px-3 py-2 rounded-md text-sm font-medium 2xl:text-2xl"
             >
-              CONTACT US
+              Contact us
             </Link>
           </li>
         </ul>

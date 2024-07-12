@@ -31,7 +31,7 @@
 
   @screen lg {
     h1 {
-      @apply text-2xl;
+      @apply text-3xl;
     }
 
     p {
@@ -49,7 +49,7 @@
 
   @screen xl {
     h1 {
-      @apply text-3xl;
+      @apply text-4xl;
     }
 
     p {
@@ -84,6 +84,10 @@
 }
 
 @layer components {
+  .moko-resposive {
+    @apply text-xl;
+  }
+
   .margin-navbar-scroll {
     @apply pt-16 scroll-mt-16;
   }
@@ -101,6 +105,10 @@
   }
 
   @screen md {
+    .moko-resposive {
+      @apply text-2xl;
+    }
+
     .margin-moko-custom {
       @apply -mx-10;
     }
@@ -115,6 +123,10 @@
   }
 
   @screen lg {
+    .moko-resposive {
+      @apply text-2xl;
+    }
+
     .margin-moko-custom {
       @apply -mx-20;
     }
@@ -128,7 +140,17 @@
     }
   }
 
+  @screen xl {
+    .moko-resposive {
+      @apply text-3xl;
+    }
+  }
+
   @screen 2xl {
+    .moko-resposive {
+      @apply text-5xl;
+    }
+
     .margin-moko-custom {
       @apply -mx-32;
     }

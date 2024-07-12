@@ -102,7 +102,7 @@ export default function Page() {
 
               <div className="flex flex-col lg:basis-3/5 ">
                 <div className=" w-fit h-[7%] text-[#00B48E] border-b-[3px] border-[#4bbfa27e]">
-                  <h1 className="moko-resposive">MOKO โมโกะ</h1>
+                  <h1 className="moko-resposive ">MOKO โมโกะ</h1>
                 </div>
 
                 <div className="py-4">

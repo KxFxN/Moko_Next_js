@@ -8,16 +8,20 @@ import Link from "next/link";
 import ProductDisplay from "./components/ProductDisplay";
 import ProductDescription from "./components/ProductDescription";
 
+import { useScroll } from "framer-motion";
+import ParallaxSection from "./components/ParallaxSection";
+
 export default function Page() {
   return (
     <>
-      <header>
+      <header className="fixed w-full z-10 bg-white">
         <Navbar />
       </header>
 
       <main className=" px-5 md:px-10 lg:px-20 2xl:px-32">
+        {/* <ParallaxSection /> */}
         <section
-          className="margin-moko-custom moko relative h-[60vh] overflow-hidden bg-[#F2FCF7] max-[390px]:h-[80vh] md:h-[70vh] lg:h-[100vh]"
+          className="margin-moko-custom moko relative h-[60vh] overflow-hidden bg-gradient-parallax  max-[390px]:h-[80vh] md:h-[70vh] lg:h-[100vh] "
           id="moko"
         >
           <div className="flex flex-col items-center text-center gap-5 pt-5 text-[#629C85] md:pt-10">

@@ -10,13 +10,14 @@ import {
 } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
+import { useScrolling } from "./ScrollProvider";
 
 const ParallaxSection = () => {
   const [isEffectComplete, setIsEffectComplete] = useState(false);
+  const { setNavbarBg, setFontColor } = useScrolling();
   const [isScrollProgressMaxed, setIsScrollProgressMaxed] = useState(false);
   const controls = useAnimation();
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true });
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -33,6 +34,10 @@ const ParallaxSection = () => {
     damping: 30,
     restDelta: 0.001,
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     if (inView) {
@@ -52,8 +57,12 @@ const ParallaxSection = () => {
         );
 
         if (!isScrollProgressMaxed) {
+          if (progress >= 0.2) {
+            setFontColor(true);
+          }
           if (progress >= 0.5) {
             setIsEffectComplete(true);
+            setNavbarBg(true);
           }
 
           if (progress >= 0.7) {
@@ -89,13 +98,7 @@ const ParallaxSection = () => {
   const textY = useTransform(smoothProgress, [0.3, 0.4], [-200, -230]);
 
   return (
-    <div
-      id="moko"
-      ref={sectionRef}
-      className={`relative ${
-        !isScrollProgressMaxed ? "h-[200vh]" : "h-[200vh]"
-      } `}
-    >
+    <div id="moko" ref={sectionRef} className={`relative h-[200vh]`}>
       <div className="sticky margin-custom top-0 h-screen overflow-hidden bg-gradient-parallax">
         <motion.div
           style={{
@@ -137,7 +140,7 @@ const ParallaxSection = () => {
           </motion.div>
 
           <motion.div
-            className="absolute left-0 top-[40%] translate-y-[20%] z-20 w-[40%] md:-translate-y-[60%] lg:w-[35%] lg:-translate-y-[30%]"
+            className="absolute left-0 top-1/2 translate-y-[20%] z-20 w-[40%] md:-translate-y-[60%] lg:w-[35%] lg:-translate-y-[30%]"
             style={{ x: isEffectComplete ? -20 : handLeftX }}
           >
             <Image
@@ -150,7 +153,7 @@ const ParallaxSection = () => {
           </motion.div>
 
           <motion.div
-            className="absolute right-0 top-[40%] translate-y-[20%] z-20 w-[40%] md:-translate-y-[60%] lg:w-[35%] lg:-translate-y-[30%]"
+            className="absolute right-0 top-1/2 translate-y-[20%] z-20 w-[40%] md:-translate-y-[60%] lg:w-[35%] lg:-translate-y-[30%]"
             style={{ x: isEffectComplete ? 0 : handRightX }}
           >
             <Image
@@ -194,7 +197,7 @@ const ParallaxSection = () => {
               y: isEffectComplete ? "" : textY,
             }}
           >
-            <motion.div className="flex flex-col items-center text-center gap-5 pt-5 text-[#629C85] md:pt-10">
+            <motion.div className="absolute flex flex-col items-center text-center gap-5 pt-5 text-[#629C85] top-[45%] md:pt-10 md:top-[35%] 2xl:top-[30%]">
               <h1 className="md:hidden">
                 MOKO <br /> Ink Restore+
               </h1>

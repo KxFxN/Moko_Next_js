@@ -97,9 +97,22 @@ const ParallaxSection = () => {
   const textOpacity = useTransform(smoothProgress, [0.3, 0.4], [0, 1]);
   const textY = useTransform(smoothProgress, [0.3, 0.4], [-200, -230]);
 
+  const backgroundGradient = useTransform(
+    smoothProgress,
+    [0, 0.2, 0.4],
+    [
+      "linear-gradient(to bottom, rgb(26,82,72) 10%, rgb(27,106,127) 30%, rgb(28,139,200) 90%)",
+      "linear-gradient(to bottom, rgb(52,134,255) 10%, rgb(52,134,255) 30%, rgb(164,136,255) 90%)",
+      "linear-gradient(to bottom, rgb(164,136,255) 10%, rgb(164,136,255) 30%, rgb(255,189,207) 90%)",
+    ]
+  );
+
   return (
     <div id="moko" ref={sectionRef} className={`relative h-[200vh]`}>
-      <div className="sticky margin-custom top-0 h-screen overflow-hidden bg-gradient-parallax">
+      <motion.div
+        className="sticky margin-custom top-0 h-screen overflow-hidden"
+        style={{ background: backgroundGradient }}
+      >
         <motion.div
           style={{
             position: "absolute",
@@ -113,8 +126,8 @@ const ParallaxSection = () => {
           <motion.div
             className="absolute left-0 top-0 z-20 w-[40%] md:w-[35%] lg:w-[30%]"
             style={{
-              x: isEffectComplete ? -20 : vectorLeftX,
-              y: isEffectComplete ? "" : 60,
+              x: vectorLeftX,
+              y: 60,
             }}
           >
             <Image
@@ -127,8 +140,8 @@ const ParallaxSection = () => {
           <motion.div
             className="absolute right-0 top-0 z-20 w-[40%] md:w-[35%] lg:w-[30%] 2xl:w-fit"
             style={{
-              x: isEffectComplete ? -20 : vectorRightX,
-              y: isEffectComplete ? "" : 60,
+              x: vectorRightX,
+              y: 60,
             }}
           >
             <Image
@@ -141,7 +154,7 @@ const ParallaxSection = () => {
 
           <motion.div
             className="absolute left-0 top-1/2 translate-y-[20%] z-20 w-[40%] md:-translate-y-[60%] lg:w-[35%] lg:-translate-y-[30%]"
-            style={{ x: isEffectComplete ? -20 : handLeftX }}
+            style={{ x: handLeftX }}
           >
             <Image
               src={"/image/hero/hands-l.png"}
@@ -154,7 +167,7 @@ const ParallaxSection = () => {
 
           <motion.div
             className="absolute right-0 top-1/2 translate-y-[20%] z-20 w-[40%] md:-translate-y-[60%] lg:w-[35%] lg:-translate-y-[30%]"
-            style={{ x: isEffectComplete ? 0 : handRightX }}
+            style={{ x: handRightX }}
           >
             <Image
               src={"/image/hero/hands-r.png"}
@@ -174,7 +187,7 @@ const ParallaxSection = () => {
               height: "10vmax",
               borderRadius: "50%",
               backgroundColor: "#F2FCF7",
-              scale: isEffectComplete ? 60 : backgroundScale,
+              scale: backgroundScale,
               x: "-50%",
               y: "-50%",
               zIndex: 1,
@@ -193,8 +206,8 @@ const ParallaxSection = () => {
           <motion.div
             className="absolute inset-0 flex items-center justify-center z-20"
             style={{
-              opacity: isEffectComplete ? "" : textOpacity,
-              y: isEffectComplete ? "" : textY,
+              opacity: textOpacity,
+              y: textY,
             }}
           >
             <motion.div className="absolute flex flex-col items-center text-center gap-5 pt-5 text-[#629C85] top-[45%] md:pt-10 md:top-[35%] 2xl:top-[30%]">
@@ -225,7 +238,7 @@ const ParallaxSection = () => {
             </motion.div>
           </motion.div>
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 };

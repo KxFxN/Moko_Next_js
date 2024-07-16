@@ -65,15 +65,14 @@ function Navbar() {
       </div>
 
       <div
-        className={`${
-          isOpen ? "block" : "hidden"
+        className={`${isOpen ? "block" : "hidden"} ${
+          !isNavbarbg ? "bg-transparent" : "bg-white"
         } py-5 md:flex md:py-0  md:basis-4/5 `}
       >
         <ul
           className={`flex flex-col w-full ${
-            (!isNavbarbg ? "bg-transparent" : "bg-white",
-            !isFontColor ? "text-white" : "text-[#629c85]")
-          } gap-3 -mt-1  md:mt-0 md:flex-row md:justify-between`}
+            !isFontColor ? "text-white" : "text-[#629c85]"
+          }  gap-3 -mt-1  md:mt-0 md:flex-row md:justify-between`}
         >
           <li className="px-3 py-2 ">
             <Link

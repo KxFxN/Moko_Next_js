@@ -8,92 +8,18 @@ import Link from "next/link";
 import ProductDisplay from "./components/ProductDisplay";
 import ProductDescription from "./components/ProductDescription";
 
-import { useScroll } from "framer-motion";
 import ParallaxSection from "./components/ParallaxSection";
+import { ScrollProvider } from "./components/ScrollProvider";
 
 export default function Page() {
   return (
-    <>
+    <ScrollProvider>
       <header>
         <Navbar />
       </header>
 
-      <main className="px-5 pt-16 md:px-10 lg:px-20 2xl:px-32">
-        {/* bg-[#F2FCF7] bg-gradient-to-b from-[rgb(26,82,72)] from-10% via-[rgb(27,106,127)] via-30% to-[rgb(28,139,200)] to-90%  bg-gradient-parallax*/}
-        {/* <ParallaxSection /> */}
-        <section
-          className="moko margin-moko-custom relative h-[80vh] overflow-hidden bg-[#F2FCF7] md:h-[70vh] lg:h-[100vh] "
-          id="moko"
-        >
-          <div className="flex flex-col items-center text-center gap-5 pt-5 text-[#629C85] md:pt-10">
-            <h1 className=" md:hidden ">
-              MOKO <br /> Ink Restore+
-            </h1>
-            <h1 className="hidden md:flex">MOKO Ink Restore+</h1>
-            <p className=" md:hidden lg:text-lg 2xl:text-2xl">
-              ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแล
-              <br />
-              รอยสักโดยเฉพาะ
-              <br />
-              และคืนความอ่อนเยาว์ด้วยส่วนผสม
-              <br />
-              อันเป็นเอกลักษณ์เฉพาะตัว
-              <br />
-              และยังช่วยลดการระคายเคืองผิว
-              <br />
-              ที่เกิดจากกระบวนการสัก
-            </p>
-            <p className="hidden md:flex lg:text-lg 2xl:text-2xl">
-              ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแลรอยสักโดยเฉพาะ
-              <br />
-              และคืนความอ่อนเยาว์ด้วยส่วนผสมอันเป็นเอกลักษณ์เฉพาะตัว
-              <br />
-              และยังช่วยลดการระคายเคืองผิวที่เกิดจาก กระบวนการสัก
-            </p>
-          </div>
-          <div className="absolute left-0 top-0 w-[40%] md:w-[35%] lg:w-[30%] ">
-            <Image
-              src={"/image/hero/Vector1.png"}
-              alt=" "
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className="absolute right-0 top-0 w-[40%] md:w-[35%] lg:w-[30%] 2xl:w-fit">
-            <Image
-              src={"/image/hero/Vector.png"}
-              alt=""
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className="absolute -left-5 top-1/2 translate-y-[20%] w-[40%] md:-translate-y-[60%] lg:w-[35%] lg:-translate-y-[30%]">
-            <Image
-              src={"/image/hero/hands-l.png"}
-              alt=""
-              width={500}
-              height={500}
-              className="w-full h-auto object-contain"
-            />
-          </div>
-          <div className="absolute -right-4 top-1/2 translate-y-[20%] w-[40%] md:-translate-y-[60%] lg:w-[35%] lg:-translate-y-[30%]">
-            <Image
-              src={"/image/hero/hands-r.png"}
-              alt=""
-              width={500}
-              height={500}
-              className="w-full h-auto object-contain"
-            />
-          </div>
-          <div className="absolute top-1/2 -translate-y-[20%] right-1/2 translate-x-1/2 w-[40%] md:w-[35%] md:-translate-y-1/2 lg:w-[25%] lg:-translate-y-[30%] xl:w-[20%] ">
-            <Image
-              src={"/image/hero/Moko-product.png"}
-              alt=""
-              width={500}
-              height={500}
-            />
-          </div>
-        </section>
+      <main className="px-5 md:px-10 lg:px-20 2xl:px-32">
+        <ParallaxSection />
 
         <section id="product">
           <div className="py-10 lg:py-14 ">
@@ -493,6 +419,6 @@ export default function Page() {
           </div>
         </footer>
       </main>
-    </>
+    </ScrollProvider>
   );
 }

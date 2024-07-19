@@ -265,7 +265,7 @@ const ParallaxSection = () => {
           </motion.div>
 
           <motion.div
-            className="absolute z-20 w-[20%] top-[44vh] right-[50vw] md:top-[35vh] md:right-[40vw] lg:w-[15%] lg:top-[38vh] lg:right-[42vw] xl:w-[9%] xl:top-[32vh] xl:right-[45vw] 2xl:top-[30%] 2xl:right-[42vw]"
+            className="absolute z-20 w-[20%] top-[44vh] right-[50vw] md:top-[35vh] md:right-[40vw] lg:w-[15%] lg:top-[38vh] lg:right-[42vw] xl:w-[9%] xl:top-[32vh] xl:right-[45vw] 2xl:top-[30%] 2xl:right-[44vw]"
             style={{
               rotate: treeRotation,
               x: treeRightX,
@@ -282,7 +282,7 @@ const ParallaxSection = () => {
           </motion.div>
 
           <motion.div
-            className="absolute z-20 w-[20%] top-[59vh] left-[9vw] md:top-[53vh] md:left-[20vw] lg:w-[15%] lg:top-[55vh] lg:left-[25vw] xl:w-[9%] xl:top-[57vh] xl:left-[35vw] 2xl:top-[60vh] 2xl:left-[37vw]"
+            className="absolute z-20 w-[20%] top-[59vh] left-[9vw] md:top-[53vh] md:left-[20vw] lg:w-[15%] lg:top-[55vh] lg:left-[25vw] xl:w-[9%] xl:top-[57vh] xl:left-[35vw] 2xl:top-[60vh] 2xl:left-[35vw]"
             style={{
               rotate: treeRotation,
               x: treeleftX,

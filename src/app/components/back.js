@@ -7,15 +7,14 @@ import {
   useScroll,
   useSpring,
   useTransform,
-  keyframes,
 } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import { useScrolling } from "./ScrollProvider";
-import { delay } from "lodash";
 
 const ParallaxSection = () => {
   const [isEffectComplete, setIsEffectComplete] = useState(false);
+  const [isOpacity, setOpacity] = useState(false);
   const { setNavbarBg, setFontColor } = useScrolling();
   const [isScrollProgressMaxed, setIsScrollProgressMaxed] = useState(false);
   const controls = useAnimation();
@@ -66,6 +65,7 @@ const ParallaxSection = () => {
 
           if (progress >= 0.2) {
             setFontColor(true);
+            setOpacity(true);
           }
 
           if (progress >= 0.5) {
@@ -130,7 +130,7 @@ const ParallaxSection = () => {
   );
 
   const starVariantsLarge = {
-    initial: { scale: 1, opacity: 1 },
+    initial: { scale: 1, opacity: 0 },
     animate: {
       scale: [1, 0.8, 0.6, 0.4, 0.2, 0.4, 0.6, 0.8, 1],
       transition: {
@@ -145,7 +145,7 @@ const ParallaxSection = () => {
   };
 
   const starVariantsSmall = {
-    initial: { scale: 1, opacity: 1 },
+    initial: { scale: 1, opacity: 0 },
     animate: {
       scale: [1, 0.7, 0.5, 0.3, 0.1, 0.3, 0.5, 0.7, 1],
       transition: {
@@ -265,7 +265,7 @@ const ParallaxSection = () => {
           </motion.div>
 
           <motion.div
-            className="absolute z-20 w-[20%] top-[41%] right-[50%] md:top-[35%] md:right-[40%] lg:w-[15%] lg:top-[38%] lg:right-[42%] xl:w-[9%] xl:top-[35%] xl:right-[45%] 2xl:top-[30%] 2xl:right-[42%]"
+            className="absolute z-20 w-[20%] top-[44vh] right-[50vw] md:top-[35vh] md:right-[40vw] lg:w-[15%] lg:top-[38vh] lg:right-[42vw] xl:w-[9%] xl:top-[32vh] xl:right-[45vw] 2xl:top-[30%] 2xl:right-[42vw]"
             style={{
               rotate: treeRotation,
               x: treeRightX,
@@ -282,7 +282,7 @@ const ParallaxSection = () => {
           </motion.div>
 
           <motion.div
-            className="absolute z-20 w-[20%] top-[59%] left-[8%] md:top-[53%] md:left-[20%] lg:w-[15%] lg:top-[55%] lg:left-[25%] xl:w-[9%] xl:top-[57%] xl:left-[35%] 2xl:top-[60%] 2xl:left-[37%]"
+            className="absolute z-20 w-[20%] top-[59vh] left-[9vw] md:top-[53vh] md:left-[20vw] lg:w-[15%] lg:top-[55vh] lg:left-[25vw] xl:w-[9%] xl:top-[57vh] xl:left-[35vw] 2xl:top-[60vh] 2xl:left-[37vw]"
             style={{
               rotate: treeRotation,
               x: treeleftX,
@@ -302,7 +302,7 @@ const ParallaxSection = () => {
             initial="initial"
             animate="animate"
             key={"top-left-1"}
-            className="absolute z-20 w-[8%] top-[43%] left-[25%] md:top-[33%] md:left-[28%] lg:w-[4%] lg:top-[38%] lg:left-[33%] xl:top-[35%] xl:left-[39%] 2xl:top-[30%]"
+            className="absolute z-20 w-[8%] top-[43vh] left-[25vw] md:top-[33vh] md:left-[28vw] lg:w-[4%] lg:top-[38vh] lg:left-[33vw] xl:top-[35vh] xl:left-[39vw] 2xl:top-[30vh]"
             style={{ transformOrigin: "center", opacity: textOpacity }}
           >
             <Image
@@ -318,7 +318,7 @@ const ParallaxSection = () => {
             initial="initial"
             animate="animate"
             key={"top-left-2"}
-            className="absolute w-[4%] top-[47%] left-[31%] z-20 md:top-[38%] md:left-[35%] lg:w-[2%] lg:top-[43%] lg:left-[38%] xl:top-[39%] xl:left-[42%]  2xl:top-[35%]"
+            className="absolute w-[4%] top-[47vh] left-[31vw] z-20 md:top-[38vh] md:left-[35vw] lg:w-[2%] lg:top-[43vh] lg:left-[38vw] xl:top-[39vh] xl:left-[42vw]  2xl:top-[35vh]"
             style={{ transformOrigin: "center", opacity: textOpacity }}
           >
             <Image
@@ -334,7 +334,7 @@ const ParallaxSection = () => {
             initial="initial"
             animate="animate"
             key={"bottom-right-1"}
-            className="absolute z-30 w-[8%] top-[73%] right-[35%] md:top-[68%] md:right-[38%] lg:w-[4%] lg:right-[41%] xl:top-[70%] xl:left-[52%] 2xl:top-[75%]"
+            className="absolute z-30 w-[8%] top-[73vh] right-[35vw] md:top-[68vh] md:right-[38vw] lg:w-[4%] lg:right-[41vw] xl:top-[70vh] xl:left-[52vw] 2xl:top-[75vh]"
             style={{ transformOrigin: "center", opacity: textOpacity }}
           >
             <Image
@@ -350,7 +350,7 @@ const ParallaxSection = () => {
             initial="initial"
             animate="animate"
             key={"bottom-right-2"}
-            className="absolute w-[4%] top-[77%] right-[33%] md:top-[73%] md:right-[36%] lg:w-[2%] lg:top-[72%] lg:right-[37%] xl:top-[75%] xl:left-[55%] 2xl:top-[80%] z-30"
+            className="absolute w-[4%] top-[77vh] right-[33vw] md:top-[73vh] md:right-[36vw] lg:w-[2%] lg:top-[72vh] lg:right-[37vw] xl:top-[75vh] xl:left-[55vw] 2xl:top-[80vw] z-30"
             style={{ transformOrigin: "center", opacity: textOpacity }}
           >
             <Image
@@ -364,7 +364,7 @@ const ParallaxSection = () => {
           <motion.div
             className="absolute inset-0 flex items-center justify-center z-20"
             style={{
-              opacity: textOpacity,
+              opacity: isOpacity ? textOpacity : "0",
               y: textY,
             }}
           >

@@ -10,8 +10,11 @@ import ProductDescription from "./components/ProductDescription";
 
 import ParallaxSection from "./components/ParallaxSection";
 import { ScrollProvider } from "./components/ScrollProvider";
+import ContactUs from "./components/ContactUs";
+import CardReview from "./components/CardReview";
 
 export default function Page() {
+
   return (
     <ScrollProvider>
       <header>
@@ -203,44 +206,9 @@ export default function Page() {
             <h1 className=" font-semibold text-[#A488FF] pb-14">
               รีวิวจากผู้ใช้งาน
             </h1>
-            <div className="grid grid-cols-2 gap-5 sm:grid-cols-3">
-              <Image
-                src="/image/Review/1.png"
-                alt=""
-                width={400}
-                height={400}
-              />
-              <Image
-                src="/image/Review/2.png"
-                alt=""
-                width={400}
-                height={400}
-              />
-              <Image
-                src="/image/Review/3.png"
-                alt=""
-                width={400}
-                height={400}
-              />
-              <Image
-                src="/image/Review/1.png"
-                alt=""
-                width={400}
-                height={400}
-              />
-              <Image
-                src="/image/Review/2.png"
-                alt=""
-                width={400}
-                height={400}
-              />
-              <Image
-                src="/image/Review/3.png"
-                alt=""
-                width={400}
-                height={400}
-              />
-            </div>
+
+            <CardReview />
+
             <div className="margin-custom-slide">
               <AutoSlide />
             </div>
@@ -262,68 +230,7 @@ export default function Page() {
                 <p className="pt-5">Allmassidea@gmail.com</p>
                 <p>(+66) 8 4043 9489</p>
               </div>
-              <form id="send_contact" className="pt-14 rounded-lg ">
-                <div className="grid grid-cols-1 gap-4 md:gap-6 lg:grid-cols-2 2xl:gap-20">
-                  <div className="form-group mb-4">
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      placeholder="Name"
-                      className="w-full p-2 border-b border-gray-300 bg-transparent focus:outline-none focus:border-[#008E7A]"
-                    />
-                  </div>
-                  <div className="form-group mb-4">
-                    <input
-                      type="text"
-                      id="surname"
-                      name="surname"
-                      required
-                      placeholder="Surname"
-                      className="w-full p-2 border-b border-gray-300 bg-transparent focus:outline-none focus:border-[#008E7A]"
-                    />
-                  </div>
-                  <div className="form-group mb-4">
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      required
-                      placeholder="Phone Number"
-                      className="w-full p-2 border-b border-gray-300 bg-transparent focus:outline-none focus:border-[#008E7A]"
-                    />
-                  </div>
-                  <div className="form-group mb-4">
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      placeholder="Email"
-                      className="w-full p-2 border-b border-gray-300 bg-transparent focus:outline-none focus:border-[#008E7A]"
-                    />
-                  </div>
-                </div>
-                <div className="form-group mb-6 md:my-5 2xl:my-20">
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    placeholder="Message"
-                    className="w-full p-2 border-b border-gray-300 bg-transparent focus:outline-none focus:border-[#008E7A] resize-none"
-                    rows="3"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  form="send_contact"
-                  className="w-full bg-[#008E7A] text-white py-3 rounded-lg font-medium hover:bg-[#007a69] transition-colors xl:w-1/3 xl:h-14 2xl:w-1/3 2xl:h-20 2xl:text-3xl"
-                >
-                  Send
-                </button>
-              </form>
+              <ContactUs />
             </div>
             <div className="flex items-center  w-full max-w-[500px] sm:max-w-[750px] md:max-w-[1000px] lg:max-w-[600px] xl:max-w-[1500px] 2xl:max-w-[1800px] ">
               <Image

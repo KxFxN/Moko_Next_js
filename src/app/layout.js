@@ -11,6 +11,9 @@ const inter = Kanit({
 export const metadata = {
   title: "Moko Thailand",
   description: "Mokothailand",
+  icons: {
+    icon: "/public/Logo4.png",
+  },
 };
 
 export default function RootLayout({ children }) {

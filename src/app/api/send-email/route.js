@@ -1,6 +1,9 @@
 import { NextResponse, NextRequest } from "next/server";
 import nodemailer from "nodemailer";
 import { google } from "googleapis";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export async function POST(req) {
   const body = await req.json();

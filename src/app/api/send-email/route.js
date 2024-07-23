@@ -35,10 +35,10 @@ export async function POST(req) {
   });
 
   const mailOptions = {
-    from: email,
-    to: process.env.EMAIL_USER,
-    // from: process.env.EMAIL_USER,
-    // to: email,
+    // from: email,
+    // to: process.env.EMAIL_USER,
+    from: process.env.EMAIL_USER,
+    to: email,
     subject: `Moko Thailand From ${name}`,
     text: `
     ${message}
@@ -51,6 +51,7 @@ export async function POST(req) {
   };
 
   try {
+    console.log(process.env.EMAIL_USER,process.env.CLIENT_ID,process.env.CLIENT_SECRET , process.env.REFRESH_TOKEN)
     await transporter.sendMail(mailOptions);
     return new Response(
       JSON.stringify({ message: "Email sent successfully" }),

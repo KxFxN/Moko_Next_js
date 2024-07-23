@@ -17,28 +17,38 @@ function ContactUs() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
+      const response = await fetch(`${process.env.HOST_MOKO}/api/send-email`, {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
-      
+
       if (response.ok) {
-        alert('Message sent successfully!');
-        setFormData({ name: '', surname: '', phone: '', email: '', message: '' });
+        alert("Message sent successfully!");
+        setFormData({
+          name: "",
+          surname: "",
+          phone: "",
+          email: "",
+          message: "",
+        });
       } else {
-        alert('Failed to send message. Please try again.');
+        alert("Failed to send message. Please try again.");
       }
     } catch (error) {
-      console.error('Error:', error);
-      alert('An error occurred. Please try again.');
+      console.error("Error:", error);
+      alert("An error occurred. Please try again.");
     }
   };
 
   return (
-    <form id="send_contact" className="pt-14 rounded-lg" onSubmit={handleSubmit}>
+    <form
+      id="send_contact"
+      className="pt-14 rounded-lg"
+      onSubmit={handleSubmit}
+    >
       <div className="grid grid-cols-1 gap-4 md:gap-6 lg:grid-cols-2 2xl:gap-20">
         <div className="form-group mb-4">
           <input

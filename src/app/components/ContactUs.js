@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -13,6 +13,10 @@ function ContactUs() {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  useEffect(() => {
+    console.log(formData);
+  }, [formData]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

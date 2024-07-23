@@ -17,7 +17,13 @@ export async function POST(req) {
     refresh_token: process.env.REFRESH_TOKEN,
   });
 
+  console.log(process.env.CLIENT_ID, process.env.EMAIL_USER);
+
+  console.log("create oauth2client");
+
   const accessToken = await oauth2Client.getAccessToken();
+
+  console.log("get accessToken");
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -33,6 +39,8 @@ export async function POST(req) {
       rejectUnauthorized: false,
     },
   });
+
+  console.log("create Transporter");
 
   const mailOptions = {
     from: email,
@@ -50,8 +58,11 @@ export async function POST(req) {
     `,
   };
 
+  console.log("create mailOptions");
+
   try {
     await transporter.sendMail(mailOptions);
+    console.log("send Email");
     return new Response(
       JSON.stringify({ message: "Email sent successfully" }),
       { status: 200, headers: { "Content-Type": "application/json" } }

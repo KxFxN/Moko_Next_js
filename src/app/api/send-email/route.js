@@ -16,12 +16,7 @@ export async function POST(req) {
   oauth2Client.setCredentials({
     refresh_token: process.env.REFRESH_TOKEN,
   });
-
-  console.log("CLIENT_ID:", process.env.CLIENT_ID);
-  console.log("CLIENT_SECRET:", process.env.CLIENT_SECRET);
-  console.log("REFRESH_TOKEN:", process.env.REFRESH_TOKEN);
-  console.log("EMAIL_USER:", process.env.EMAIL_USER);
-
+  
   const accessToken = await oauth2Client.getAccessToken();
 
   const transporter = nodemailer.createTransport({

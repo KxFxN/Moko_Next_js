@@ -330,7 +330,7 @@ const ParallaxSection = () => {
           </motion.div>
 
           <motion.div
-            variants={starVariantsLarge}
+            variants={starVariantsSmall}
             initial="initial"
             animate="animate"
             key={"bottom-right-1"}

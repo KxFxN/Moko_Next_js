@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
 function ProductDisplay() {
@@ -15,10 +15,21 @@ function ProductDisplay() {
     "/image/Product/Rectangle2-3.png",
   ];
 
-  const handleImageClick = (src, index) => {
+  const handleImageClick = useCallback((src, index) => {
     setSelectedImage(src);
     setActiveIndex(index);
-  };
+  }, []);
+
+  const nextImage = useCallback(() => {
+    const nextIndex = (activeIndex + 1) % productImages.length;
+    handleImageClick(productImages[nextIndex], nextIndex);
+  }, [activeIndex, handleImageClick, productImages]);
+
+  useEffect(() => {
+    const interval = setInterval(nextImage, 8000);
+
+    return () => clearInterval(interval);
+  }, [nextImage]);
 
   return (
     <div className="product-image pb-14 lg:basis-2/5 lg:pb-0">

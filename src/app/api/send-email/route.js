@@ -1,9 +1,6 @@
 import { NextResponse, NextRequest } from "next/server";
 import nodemailer from "nodemailer";
 import { google } from "googleapis";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 export async function POST(req) {
   const body = await req.json();
@@ -20,13 +17,12 @@ export async function POST(req) {
     refresh_token: process.env.REFRESH_TOKEN,
   });
 
-  console.log(process.env.CLIENT_ID, process.env.EMAIL_USER);
-
-  console.log("create oauth2client");
+  console.log("CLIENT_ID:", process.env.CLIENT_ID);
+  console.log("CLIENT_SECRET:", process.env.CLIENT_SECRET);
+  console.log("REFRESH_TOKEN:", process.env.REFRESH_TOKEN);
+  console.log("EMAIL_USER:", process.env.EMAIL_USER);
 
   const accessToken = await oauth2Client.getAccessToken();
-
-  console.log("get accessToken");
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -43,8 +39,6 @@ export async function POST(req) {
     },
   });
 
-  console.log("create Transporter");
-
   const mailOptions = {
     from: email,
     to: process.env.EMAIL_USER,
@@ -60,8 +54,6 @@ export async function POST(req) {
     Email: ${email}
     `,
   };
-
-  console.log("create mailOptions");
 
   try {
     await transporter.sendMail(mailOptions);

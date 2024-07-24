@@ -68,6 +68,17 @@ export default function RootLayout({ children }) {
           content="Moko thailand ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแลรอยสักโดยเฉพาะ และคืนความอ่อนเยาว์ด้วยส่วนผสมอันเป็นเอกลักษณ์เฉพาะตัว และยังช่วยลดการระคายเคืองผิวที่เกิดจากกระบวนการสัก"
         />
         <meta name="twitter:image" content="/path-to-twitter-image.jpg" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DREBPW8E5"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-7DREBPW8E5');
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

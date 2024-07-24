@@ -248,7 +248,7 @@ const ParallaxSection = () => {
           />
 
           <motion.div
-            className="absolute top-1/2 -translate-y-[20%] right-1/2 translate-x-1/2 z-30 w-[35%] md:w-[30%] md:-translate-y-[35%] lg:w-[25%] lg:-translate-y-[30%] xl:w-[15%]"
+            className="absolute top-1/2 -translate-y-[20%] right-1/2 translate-x-1/2 z-30 w-[35%] md:w-[30%] md:-translate-y-[35%] lg:w-[25%] min-[1180px]:w-[20%] min-[1200px]:w-[25%] lg:-translate-y-[30%] xl:w-[15%]"
             style={{
               filter: useTransform(
                 imageBrightness,

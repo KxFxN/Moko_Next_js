@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const slides = [
-  "/image/slider/Rectangle 8.png",
-  "/image/slider/Rectangle 9.png",
-  "/image/slider/Rectangle 10.png",
-  "/image/slider/Rectangle 11.png",
-  "/image/slider/Rectangle 12.png",
+  "/image/slider/Rectangle 8.jpg",
+  "/image/slider/Rectangle 9.jpg",
+  "/image/slider/Rectangle 10.jpg",
+  "/image/slider/Rectangle 11.jpg",
+  "/image/slider/Rectangle 12.jpg",
 ];
 
 const AutoSlide = () => {
@@ -20,7 +20,7 @@ const AutoSlide = () => {
   return (
     <div className="relative w-full overflow-hidden">
       <motion.div
-        className="flex"
+        className="flex gap-3"
         animate={{
           x: ["0%", "-100%"],
           transition: {
@@ -37,8 +37,8 @@ const AutoSlide = () => {
             className="flex-shrink-0"
             style={{ width: `${100 / slides.length}%` }}
           >
-            <div className="flex flex-col items-center justify-center text-6xl w-full pr-3 ">
-              <Image src={slide} alt="" width={450} height={450} />
+            <div className="flex flex-col items-center justify-center text-6xl w-full rounded-xl md:rounded-2xl 2xl:rounded-3xl overflow-hidden">
+              <Image src={slide} alt="" width={500} height={500} />
             </div>
           </div>
         ))}

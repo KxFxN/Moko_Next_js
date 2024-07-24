@@ -34,16 +34,32 @@ function ContactUs() {
           email: "",
           message: "",
         });
+        alert("Message sent successfully!");
+        setFormData({
+          name: "",
+          surname: "",
+          phone: "",
+          email: "",
+          message: "",
+        });
       } else {
+        alert("Failed to send message. Please try again.");
         alert("Failed to send message. Please try again.");
       }
     } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred. Please try again.");
       console.error("Error:", error);
       alert("An error occurred. Please try again.");
     }
   };
 
   return (
+    <form
+      id="send_contact"
+      className="pt-14 rounded-lg"
+      onSubmit={handleSubmit}
+    >
     <form
       id="send_contact"
       className="pt-14 rounded-lg"

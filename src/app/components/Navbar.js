@@ -40,14 +40,14 @@ function Navbar() {
         >
           {!isFontColor ? (
             <Image
-              src="/image/Logo/Logo5.png"
+              src="/image/Logo/Moko-Logo-White.svg"
               alt=""
               width={200}
               height={200}
             />
           ) : (
             <Image
-              src="/image/Logo/Logo4.png"
+              src="/image/Logo/Moko-Logo-Green.svg"
               alt=""
               width={200}
               height={200}

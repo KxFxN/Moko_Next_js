@@ -29,7 +29,7 @@ export default function Page() {
             <div className="flex flex-col lg:gap-10 lg:flex-row xl:gap-20 2xl:gap-40">
               <ProductDisplay />
 
-              <div className="flex flex-col lg:basis-3/5 ">
+              <div className="flex flex-col lg:basis-3/5 2xl:basis-4/5">
                 <div className=" w-fit h-[7%] text-[#00B48E] border-b-[3px] border-[#4bbfa27e]">
                   <h1 className="moko-resposive ">MOKO โมโกะ</h1>
                 </div>

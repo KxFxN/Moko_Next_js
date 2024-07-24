@@ -32,8 +32,8 @@ function ProductDisplay() {
   }, [nextImage]);
 
   return (
-    <div className="product-image pb-14 lg:basis-2/5 lg:pb-0">
-      <div className="flex justify-center  overflow-hidden rounded-3xl max-w-[1000px] h-[24rem] md:h-[45rem] lg:h-[21rem] xl:h-[30rem] 2xl:h-[50rem]">
+    <div className="product-image pb-14 lg:basis-2/5 lg:pb-0 2xl:basis-1/5">
+      <div className="flex justify-center  overflow-hidden rounded-3xl max-w-[1000px] h-[24rem] md:h-[45rem] lg:h-[21rem] xl:h-[30rem] 2xl:max-w-[43.75rem] 2xl:h-[43.75rem]">
         <Image
           src={selectedImage}
           alt="Product image"
@@ -47,7 +47,7 @@ function ProductDisplay() {
         {productImages.map((src, index) => (
           <div
             key={index}
-            className={`transition-all duration-300 rounded-xl h-[5.5rem] md:h-[10rem] lg:h-[4.5rem] xl:w-28 xl:h-28 2xl:w-[15rem] 2xl:h-[12rem] overflow-hidden ${
+            className={`transition-all duration-300 rounded-xl h-[5.5rem] md:h-[10rem] lg:h-[4.5rem] xl:w-28 xl:h-28 2xl:w-[10rem] 2xl:h-[10rem] overflow-hidden ${
               index === activeIndex ? "scale-110" : "scale-100"
             }  max-w-[200px]`}
           >

@@ -258,11 +258,11 @@ export default function Page() {
                   Contact Us
                 </h1>
                 <p>
-                  288/113 RK Park Watcharapol Saimai(2) Soi Saimai 76-78 Kwang
-                  Saimai Khet Saimai BKK 10220 Thailand.
+                  เลขที่ 65/1 หมู่ 4 ตำบล สันกลาง อำเภอ สันกำแพง จังหวัด
+                  เชียงใหม่ 50130
                 </p>
-                <p className="pt-5">Allmassidea@gmail.com</p>
-                <p>(+66) 8 4043 9489</p>
+                <p className="pt-5">mokobillion.mkt@gmail.com</p>
+                <p>0903234885</p>
               </div>
               <ContactUs />
             </div>

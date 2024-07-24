@@ -9,7 +9,7 @@ const inter = Kanit({
 });
 
 export const metadata = {
-  title: "ครีมถนอมรอยสักลดการระคายเคืองผิว Moko Thailand",
+  title: "ครีมถนอมรอยสัก ลดการระคายเคืองผิว Moko Thailand",
   description:
     "Moko thailand ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแลรอยสักโดยเฉพาะ และคืนความอ่อนเยาว์ด้วยส่วนผสมอันเป็นเอกลักษณ์เฉพาะตัว และยังช่วยลดการระคายเคืองผิวที่เกิดจากกระบวนการสัก",
   keywords: "Moko, moko, Moko Thailand, MokoThailand, mokothailand",
@@ -17,7 +17,7 @@ export const metadata = {
     icon: "/Logo4.svg",
   },
   openGraph: {
-    title: "ครีมถนอมรอยสัก Moko Thailand",
+    title: "ครีมถนอมรอยสัก ลดการระคายเคืองผิว Moko Thailand",
     description: `Moko thailand ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแลรอยสักโดยเฉพาะ และคืนความอ่อนเยาว์ด้วยส่วนผสมอันเป็นเอกลักษณ์เฉพาะตัว และยังช่วยลดการระคายเคืองผิวที่เกิดจากกระบวนการสัก`,
     type: "website",
     url: "https://www.mokothailand.com",
@@ -47,7 +47,10 @@ export default function RootLayout({ children }) {
           name="keywords"
           content="Moko, moko, Moko Thailand, MokoThailand, mokothailand"
         />
-        <meta property="og:title" content="Moko Thailand" />
+        <meta
+          property="og:title"
+          content="ครีมถนอมรอยสัก ลดการระคายเคืองผิว Moko Thailand"
+        />
         <meta
           property="og:description"
           content="Moko thailand ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแลรอยสักโดยเฉพาะ และคืนความอ่อนเยาว์ด้วยส่วนผสมอันเป็นเอกลักษณ์เฉพาะตัว และยังช่วยลดการระคายเคืองผิวที่เกิดจากกระบวนการสัก"
@@ -56,7 +59,10 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content="https://www.mokothailand.com" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Moko Thailand" />
+        <meta
+          name="twitter:title"
+          content="ครีมถนอมรอยสัก ลดการระคายเคืองผิว Moko Thailand"
+        />
         <meta
           name="twitter:description"
           content="Moko thailand ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแลรอยสักโดยเฉพาะ และคืนความอ่อนเยาว์ด้วยส่วนผสมอันเป็นเอกลักษณ์เฉพาะตัว และยังช่วยลดการระคายเคืองผิวที่เกิดจากกระบวนการสัก"

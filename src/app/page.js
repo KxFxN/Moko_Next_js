@@ -12,9 +12,9 @@ import ParallaxSection from "./components/ParallaxSection";
 import { ScrollProvider } from "./components/ScrollProvider";
 import ContactUs from "./components/ContactUs";
 import CardReview from "./components/CardReview";
+import { MdOutlineVerified } from "react-icons/md";
 
 export default function Page() {
-
   return (
     <ScrollProvider>
       <header>
@@ -59,6 +59,19 @@ export default function Page() {
                     ผิวบอบบางแพ้ง่ายใช้ได้
                   </p>
                 </div>
+
+                <div className="flex justify-center text-xl w-full bg-[#5D7998] rounded-3xl my-3 lg:w-[60%] lg:text-lg xl:w-[45%]">
+                  <Link
+                    href="http://pertento.fda.moph.go.th/FDA_SEARCH_CENTER/PRODUCT/export_cmt_detail.aspx?regnos=5016600039912"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-row items-center py-2 gap-2 text-white"
+                  >
+                    <MdOutlineVerified className="text-2xl" />
+                    ตรวจสอบผลิตภัณฑ์สินค้าโดย อย.
+                  </Link>
+                </div>
+
                 <div className="text-xl text-[#00B48E] mb-4 xl:text-2xl xl:font-medium 2xl:text-5xl">
                   599 THB
                 </div>
@@ -202,10 +215,31 @@ export default function Page() {
             </div>
           </section>
 
-          <section className="flex flex-col items-center py-10" id="review">
+          <section
+            className="flex flex-col items-center py-10 gap-5"
+            id="review"
+          >
             <h1 className=" font-semibold text-[#A488FF] pb-14">
               รีวิวจากผู้ใช้งาน
             </h1>
+
+            <div className="w-full h-fit flex items-center justify-center rounded-3xl bg-black ">
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+                height="auto"
+                className="w-[50%] md:w-[50%] lg:w-[40%] xl:w-[30%] 2xl:w-[20%] "
+              >
+                <source
+                  src="/image/video/01 MOKO_FULL-VERSION.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
 
             <CardReview />
 
@@ -215,7 +249,7 @@ export default function Page() {
           </section>
 
           <section
-            className="margin-custom flex flex-col-reverse bg-[#EBFEF5] lg:flex-row lg:gap-10"
+            className="margin-custom flex flex-col-reverse bg-[#EBFEF5] lg:flex-row lg:gap-10 items-center"
             id="contact"
           >
             <div className="basis-full">
@@ -232,9 +266,9 @@ export default function Page() {
               </div>
               <ContactUs />
             </div>
-            <div className="flex items-center  w-full max-w-[500px] sm:max-w-[750px] md:max-w-[1000px] lg:max-w-[600px] xl:max-w-[1500px] 2xl:max-w-[1800px] ">
+            <div className="flex items-center  w-full overflow-hidden rounded-3xl max-w-[25rem] max-h-[20rem] md:max-w-[40rem] md:max-h-[40rem] lg:max-w-[35rem]  lg:max-h-[25rem] xl:max-w-[40rem] xl:max-h-[35rem] 2xl:max-w-[60rem] 2xl:max-h-[55rem] ">
               <Image
-                src="/image/Product/Rectangle2-3.png"
+                src="/image/Product/Rectangle2-3.jpg"
                 alt="Product Image"
                 width={2000}
                 height={2000}

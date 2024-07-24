@@ -4,15 +4,15 @@ import Image from "next/image";
 
 function ProductDisplay() {
   const [selectedImage, setSelectedImage] = useState(
-    "/image/Product/Rectangle2.png"
+    "/image/Product/Rectangle2.jpg"
   );
   const [activeIndex, setActiveIndex] = useState(0);
 
   const productImages = [
-    "/image/Product/Rectangle2.png",
-    "/image/Product/Rectangle2-1.png",
-    "/image/Product/Rectangle2-2.png",
-    "/image/Product/Rectangle2-3.png",
+    "/image/Product/Rectangle2.jpg",
+    "/image/Product/Rectangle2-1.jpg",
+    "/image/Product/Rectangle2-2.jpg",
+    "/image/Product/Rectangle2-3.jpg",
   ];
 
   const handleImageClick = useCallback((src, index) => {
@@ -33,7 +33,7 @@ function ProductDisplay() {
 
   return (
     <div className="product-image pb-14 lg:basis-2/5 lg:pb-0">
-      <div className="flex justify-center max-w-[1000px]">
+      <div className="flex justify-center  overflow-hidden rounded-3xl max-w-[1000px] h-[24rem] md:h-[45rem] lg:h-[21rem] xl:h-[30rem] 2xl:h-[50rem]">
         <Image
           src={selectedImage}
           alt="Product image"
@@ -43,11 +43,11 @@ function ProductDisplay() {
         />
       </div>
 
-      <div className="flex justify-between gap-2 py-2 sm:py-6 sm:gap-5 lg:gap-3">
+      <div className="flex justify-between gap-2 py-3 sm:py-6 sm:gap-5 lg:py-2 lg:gap-3 xl:py-4">
         {productImages.map((src, index) => (
           <div
             key={index}
-            className={`transition-all duration-300 ${
+            className={`transition-all duration-300 rounded-xl h-[5.5rem] md:h-[10rem] lg:h-[4.5rem] xl:w-28 xl:h-28 2xl:w-[15rem] 2xl:h-[12rem] overflow-hidden ${
               index === activeIndex ? "scale-110" : "scale-100"
             }  max-w-[200px]`}
           >

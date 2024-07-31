@@ -13,6 +13,7 @@ import { ScrollProvider } from "./components/ScrollProvider";
 import ContactUs from "./components/ContactUs";
 import CardReview from "./components/CardReview";
 import { MdOutlineVerified } from "react-icons/md";
+import Banner from "./components/Banner";
 
 export default function Page() {
   return (
@@ -257,12 +258,13 @@ export default function Page() {
                 <h1 className="text-3xl font-medium text-[#008E7A] py-10">
                   Contact Us
                 </h1>
+                <p>ชื่อผู้ประกอบการ : สกิน วิลล่า</p>
                 <p>
                   เลขที่ 65/1 หมู่ 4 ตำบล สันกลาง อำเภอ สันกำแพง จังหวัด
                   เชียงใหม่ 50130
                 </p>
-                <p className="pt-5">mokobillion.mkt@gmail.com</p>
-                <p>0903234885</p>
+                <p className="pt-5">อีเมล : mokobillion.mkt@gmail.com</p>
+                <p>เบอร์ติดต่อ : 0903234885</p>
               </div>
               <ContactUs />
             </div>
@@ -359,6 +361,7 @@ export default function Page() {
             </div>
           </div>
         </footer>
+        <Banner />
       </main>
     </ScrollProvider>
   );

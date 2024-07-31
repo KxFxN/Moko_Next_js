@@ -28,9 +28,9 @@ function Navbar() {
 
   return (
     <nav
-      className={`h-16 py-3 fixed w-full z-10 ${
+      className={`fixed top-0 w-full z-10 h-16 py-3 ${
         !isNavbarbg ? "bg-transparent" : "bg-white"
-      } md:flex md:items-center  md:px-24 md:gap-20`}
+      } md:flex md:items-center md:px-24 md:gap-20`}
     >
       <div className="flex justify-between px-7 md:px-0 md:basis-1/5">
         <Link
@@ -67,7 +67,7 @@ function Navbar() {
       <div
         className={`${isOpen ? "block" : "hidden"} ${
           !isNavbarbg ? "bg-transparent" : "bg-white"
-        } py-5 md:flex md:py-0  md:basis-4/5 `}
+        } py-5 md:flex md:py-0 md:basis-4/5 `}
       >
         <ul
           className={`flex flex-col w-full ${

@@ -19,13 +19,26 @@ function Banner() {
     >
       <div className="flex flex-row gap-2">
         <MdOutlineVerified className="text-2xl" />
-        <p className="">
+        <p className="md:hidden">
+          MOKO ผลิตภัณฑ์ ได้รับการรับรอง
+          <br /> อย 50-1-6600039912{" "}
+          <Link
+            href={
+              "http://pertento.fda.moph.go.th/FDA_SEARCH_CENTER/PRODUCT/export_cmt_detail.aspx?regnos=5016600039912"
+            }
+            className="underline decoration-whites pl-2"
+            target="_blank"
+          >
+            คลิกได้ที่
+          </Link>
+        </p>
+        <p className="hidden md:flex">
           MOKO ผลิตภัณฑ์ ได้รับการรับรอง อย 50-1-6600039912{" "}
           <Link
             href={
               "http://pertento.fda.moph.go.th/FDA_SEARCH_CENTER/PRODUCT/export_cmt_detail.aspx?regnos=5016600039912"
             }
-            className="underline decoration-whites"
+            className="underline decoration-whites pl-2"
             target="_blank"
           >
             คลิกได้ที่

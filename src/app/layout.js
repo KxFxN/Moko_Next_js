@@ -9,7 +9,7 @@ const inter = Kanit({
 });
 
 export const metadata = {
-  title: "ครีมถนอมรอยสัก ลดการระคายเคืองผิว Moko Thailand",
+  title: "ครีมถนอมรอยสัก ลดการระคายเคืองผิว Moko Thailand ครีมรอยสัก",
   description:
     "Moko thailand ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแลรอยสักโดยเฉพาะ และคืนความอ่อนเยาว์ด้วยส่วนผสมอันเป็นเอกลักษณ์เฉพาะตัว และยังช่วยลดการระคายเคืองผิวที่เกิดจากกระบวนการสัก",
   keywords: "Moko, moko, Moko Thailand, MokoThailand, mokothailand",
@@ -17,7 +17,7 @@ export const metadata = {
     icon: "/Logo4.svg",
   },
   openGraph: {
-    title: "ครีมถนอมรอยสัก ลดการระคายเคืองผิว Moko Thailand",
+    title: "ครีมถนอมรอยสัก ลดการระคายเคืองผิว Moko Thailand ครีมรอยสัก",
     description: `Moko thailand ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแลรอยสักโดยเฉพาะ และคืนความอ่อนเยาว์ด้วยส่วนผสมอันเป็นเอกลักษณ์เฉพาะตัว และยังช่วยลดการระคายเคืองผิวที่เกิดจากกระบวนการสัก`,
     type: "website",
     url: "https://www.mokothailand.com",
@@ -36,6 +36,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="th">
       <head>
+        <title>
+          ครีมถนอมรอยสัก ลดการระคายเคืองผิว Moko Thailand ครีมรอยสัก
+        </title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
@@ -45,11 +48,11 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="keywords"
-          content="Moko, moko, Moko Thailand, MokoThailand, mokothailand"
+          content="Moko, moko, Moko Thailand, MokoThailand, mokothailand , ครีมรอยสัก , ครีมถนอมรอยสัก"
         />
         <meta
           property="og:title"
-          content="ครีมถนอมรอยสัก ลดการระคายเคืองผิว Moko Thailand"
+          content="ครีมถนอมรอยสัก ลดการระคายเคืองผิว Moko Thailand ครีมรอยสัก"
         />
         <meta
           property="og:description"
@@ -61,14 +64,17 @@ export default function RootLayout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="ครีมถนอมรอยสัก ลดการระคายเคืองผิว Moko Thailand"
+          content="ครีมถนอมรอยสัก ลดการระคายเคืองผิว Moko Thailand ครีมรอยสัก"
         />
         <meta
           name="twitter:description"
           content="Moko thailand ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแลรอยสักโดยเฉพาะ และคืนความอ่อนเยาว์ด้วยส่วนผสมอันเป็นเอกลักษณ์เฉพาะตัว และยังช่วยลดการระคายเคืองผิวที่เกิดจากกระบวนการสัก"
         />
         <meta name="twitter:image" content="/path-to-twitter-image.jpg" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DREBPW8E5"></script>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-7DREBPW8E5"
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `

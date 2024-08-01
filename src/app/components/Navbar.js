@@ -30,7 +30,7 @@ function Navbar() {
     <nav
       className={`fixed top-0 w-full z-10 h-16 py-3 ${
         !isNavbarbg ? "bg-transparent" : "bg-white"
-      } md:flex md:items-center md:px-24 md:gap-20`}
+      } md:flex md:items-center md:px-16 md:gap-16`}
     >
       <div className="flex justify-between px-7 md:px-0 md:basis-1/5">
         <Link
@@ -102,6 +102,34 @@ function Navbar() {
             </Link>
           </li>
         </ul>
+        <div className="flex-row gap-2 items-center justify-center hidden ml-5 md:flex">
+          <Link
+            href="https://shopee.co.th/mokothailand"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shopee max-w-[70px] md:max-w-[60px] lg:max-w-[75px] xl:max-w-[85px]"
+          >
+            <Image
+              src="/image/shop/Shopee.png"
+              alt=""
+              width={200}
+              height={50}
+            />
+          </Link>
+          <Link
+            href="https://www.lazada.co.th/shop/moko-thailand"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="lazada max-w-[80px] md:max-w-[60px] lg:max-w-[75px] xl:max-w-[85px]"
+          >
+            <Image
+              src="/image/shop/Lazada.png"
+              alt=""
+              width={200}
+              height={50}
+            />
+          </Link>
+        </div>
       </div>
     </nav>
   );

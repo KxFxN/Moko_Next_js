@@ -1,5 +1,6 @@
 import { Inter, Kanit } from "next/font/google";
 import "./globals.css";
+import { ScrollProvider } from "./components/ScrollProvider";
 
 const inter = Kanit({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -34,7 +35,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="th">
+    <html lang="th" data-theme="light">
       <head>
         <title>
           ครีมถนอมรอยสัก ลดการระคายเคืองผิว Moko Thailand ครีมรอยสัก
@@ -105,7 +106,9 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <ScrollProvider>
+        <body className={inter.className}>{children}</body>
+      </ScrollProvider>
     </html>
   );
 }

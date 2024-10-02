@@ -11,6 +11,7 @@ import {
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import { useScrolling } from "./ScrollProvider";
+import Link from "next/link";
 
 const ParallaxSection = () => {
   const [isEffectComplete, setIsEffectComplete] = useState(false);
@@ -104,6 +105,8 @@ const ParallaxSection = () => {
 
   const textOpacity = useTransform(smoothProgress, [0.3, 0.4], [0, 1]);
   const textY = useTransform(smoothProgress, [0.3, 0.4], [-200, -230]);
+
+  const ButtonY = useTransform(smoothProgress, [0.3, 0.4], [-60, -90]);
 
   const treeOpacity = useTransform(smoothProgress, [0.2, 0.3], [0, 1]);
 
@@ -394,6 +397,54 @@ const ParallaxSection = () => {
                 และยังช่วยลดการระคายเคืองผิวที่เกิดจากกระบวนการสัก
               </p>
             </motion.div>
+          </motion.div>
+        </motion.div>
+
+        <motion.div
+          className="absolute inset-0 flex items-end justify-center sm:justify-end z-40 sm:right-[5vw] sm:bottom-[15vh] lg:right-[17vw] lg:bottom-0 xl:right-[22vw] xl:bottom-[5vh]"
+          style={{
+            opacity: isOpacity ? textOpacity : "0",
+            y: ButtonY,
+          }}
+        >
+          <motion.div className="flex flex-row gap-2">
+            <button
+              className="p-[2px] rounded-3xl bg-gradient-to-r overflow-hidden from-pink-300 to-blue-300"
+              onClick={() => document.getElementById("my_modal_1").showModal()}
+            >
+              <div className="bg-white h-full w-full rounded-3xl p-2 transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-300 hover:to-blue-300">
+                <span className="relative z-10 text-[#386C5F] hover:text-white">
+                  PRODUCT CATALOG
+                </span>
+              </div>
+            </button>
+            <dialog id="my_modal_1" className="modal">
+              <div className="modal-box w-[60%] md:w-[20%]">
+                <form method="dialog">
+                  {/* if there is a button in form, it will close the modal */}
+                  <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                    ✕
+                  </button>
+                </form>
+                <div className="p-2">
+                  <Link href="tel:+123456789">
+                    <p className="py-4 rounded-2xl border border-[#7CD4B1] bg-[#e5fff5] text-center hover:underline">
+                      0840439489
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </dialog>
+
+            <div className="p-[2px] rounded-3xl bg-gradient-to-r overflow-hidden from-pink-300 to-blue-300">
+              <Link href={'/catelog'}>
+                <button className="bg-white h-full w-full rounded-3xl p-2 transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-300 hover:to-blue-300">
+                  <span className="relative z-10 text-[#386C5F] hover:text-white">
+                    TATTO SHOR PARTNER
+                  </span>
+                </button>
+              </Link>
+            </div>
           </motion.div>
         </motion.div>
       </motion.div>

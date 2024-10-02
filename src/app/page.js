@@ -14,10 +14,11 @@ import ContactUs from "./components/ContactUs";
 import CardReview from "./components/CardReview";
 import { MdOutlineVerified } from "react-icons/md";
 import Banner from "./components/Banner";
+import Question from "./components/Question";
 
 export default function Page() {
   return (
-    <ScrollProvider>
+    <>
       <header>
         <Navbar />
       </header>
@@ -244,6 +245,8 @@ export default function Page() {
 
             <CardReview />
 
+            <Question />
+
             <div className="margin-custom-slide">
               <AutoSlide />
             </div>
@@ -363,6 +366,6 @@ export default function Page() {
         </footer>
         <Banner />
       </main>
-    </ScrollProvider>
+    </>
   );
 }

@@ -12,7 +12,9 @@ export default function AboutUs() {
 
       <div className="min-h-[100vh] flex items-center px-5 md:px-10 lg:px-20 2xl:px-32">
         <div className="mt-28">
-          <h1 className="text-4xl font-bold text-[#57CE7F] mb-6 text-center lg:text-start">ABOUT US</h1>
+          <h1 className="text-4xl font-bold text-[#57CE7F] mb-6 text-center lg:text-start">
+            ABOUT US
+          </h1>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-16 md:ml-16 lg:ml-20">
               <div>
@@ -64,10 +66,10 @@ export default function AboutUs() {
                 />
                 <blockquote className="text-[#57CE7F] text-xl md:text-2xl font-medium text-center max-w-2xl mx-auto relative z-10">
                   <p className="text-2xl">
-                    " ทุกรอยสัก มีเรื่องราว รักษาไว้ให้นานเพราะ
+                    &ldquo; ทุกรอยสัก มีเรื่องราว รักษาไว้ให้นานเพราะ
                   </p>
                   <p className="text-2xl">
-                    ความทรงจำไม่เคยลืมเลือนครีมบำรุงรอยสัก "
+                    ความทรงจำไม่เคยลืมเลือนครีมบำรุงรอยสัก &rdquo;
                   </p>
                 </blockquote>
               </div>

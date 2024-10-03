@@ -76,9 +76,9 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-10 h-16 py-3 ${getNavbarBackground()} md:flex md:items-center md:px-16 md:gap-16`}
+      className={`fixed top-0 w-full justify-between z-10 h-16 py-3 ${getNavbarBackground()} md:flex md:items-center md:px-6 md:gap-6 lg:px-16 lg:gap-16`}
     >
-      <div className="flex justify-between px-7 md:px-0 md:basis-1/5">
+      <div className="flex justify-between px-7 md:px-0 md:basis-[10%]">
         <Link
           href={"/"}
           onClick={(e) => handleScroll(e, "moko")}
@@ -97,7 +97,7 @@ function Navbar() {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } ${getNavbarBackground()} py-5 md:flex md:py-0 md:basis-4/5`}
+        } ${getNavbarBackground()} py-5 md:flex md:py-0 md:basis-[90%]`}
       >
         <ul
           className={`flex flex-col w-full ${getFontColor()} gap-3 -mt-1  md:mt-0 md:flex-row md:justify-between`}
@@ -126,6 +126,15 @@ function Navbar() {
               className="w-full  hover:opacity-75  px-3 py-2 rounded-md text-sm font-medium 2xl:text-2xl"
             >
               Reviewer
+            </Link>
+          </li>
+          <li className="px-3 py-2">
+            <Link
+              href={"#faq"}
+              onClick={(e) => handleScroll(e, "faq")}
+              className="w-full  hover:opacity-75  px-3 py-2 rounded-md text-sm font-medium 2xl:text-2xl"
+            >
+              FAQ
             </Link>
           </li>
           <li className="px-3 py-2">

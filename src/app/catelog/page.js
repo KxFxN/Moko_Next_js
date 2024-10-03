@@ -1,9 +1,25 @@
-import React from "react";
+"use client";
+import React, { useCallback } from "react";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 export default function Page() {
+  const handleScroll = (e, id) => {
+    e.preventDefault();
+    window.location.href = `/#${id}`;
+
+    const element = document.getElementById(id);
+    const navbarHeight = document.querySelector("footer")?.offsetHeight || 0;
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - navbarHeight,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <header>
@@ -12,7 +28,14 @@ export default function Page() {
 
       <div className="px-5 md:px-10 lg:px-20 2xl:px-32">
         <main className="flex-grow">
-          <div className="bg-[#57CE7F] overflow-hidden  min-h-screen -mx-5 md:-mx-10 lg:-mx-20 2xl:-mx-32">
+          <div className="bg-[#57CE7F] relative overflow-hidden  min-h-screen -mx-5 md:-mx-10 lg:-mx-20 2xl:-mx-32">
+            <div className="flex flex-row items-center mb-10 absolute top-[4%] left-[5%] text-white">
+              <Link href={"/"} className=" hover:text-gray-200">
+                หน้าแรก
+              </Link>
+              <MdKeyboardArrowRight size={20} />
+              <p>PRODUCT CATALOG</p>
+            </div>
             <div className="flex items-center justify-between text-white mt-20 -mx-5 md:-mx-10 lg:-mx-20 2xl:-mx-32">
               <Image
                 src={"/image/catelog/Vector.png"}
@@ -89,7 +112,27 @@ export default function Page() {
                 width={30}
                 height={30}
               />
+              <Link href={"/about"}>About US</Link>
+            </li>
+            <li className="flex items-center gap-7 text-white text-xl">
+              <Image
+                src={"/image/vector/Vector.png"}
+                alt=""
+                width={30}
+                height={30}
+              />
               <Link href={"#review"}>REVIEWER</Link>
+            </li>
+            <li className="flex items-center gap-7 text-white text-xl">
+              <Image
+                src={"/image/vector/Vector.png"}
+                alt=""
+                width={30}
+                height={30}
+              />
+              <Link href="/" onClick={(e) => handleScroll(e, "faq")}>
+                FAQ
+              </Link>
             </li>
             <li className="flex items-center gap-7 text-white text-xl">
               <Image

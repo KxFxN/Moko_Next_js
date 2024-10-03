@@ -27,7 +27,7 @@ const ToggleSection = ({ title, children }) => {
 
 export default function Question() {
   return (
-    <div className="flex flex-col w-full h-full gap-8 py-6 mx-auto cursor-pointer lg:max-w-[75%] 2xl:gap-20 2xl:mt-20">
+    <div id="faq" className="flex flex-col w-full h-full gap-8 py-6 mx-auto cursor-pointer lg:max-w-[75%] 2xl:gap-20 2xl:mt-20">
       <h1 className="text-[#386C5F] text-center mb-6">คำถามที่พบบ่อย</h1>
       <ToggleSection title="MOKO คืออะไร">
         <p>

@@ -401,33 +401,39 @@ const ParallaxSection = () => {
         </motion.div>
 
         <motion.div
-          className="absolute inset-0 flex items-end justify-center sm:justify-end z-40 sm:right-[5vw] sm:bottom-[15vh] lg:right-[17vw] lg:bottom-0 xl:right-[22vw] xl:bottom-[5vh]"
+          className="absolute inset-0 flex items-end justify-center -bottom-16 sm:justify-end z-40 sm:right-[5vw] sm:bottom-[15vh] lg:right-[17vw] lg:bottom-0 xl:right-[22vw] xl:bottom-[5vh]"
           style={{
             opacity: isOpacity ? textOpacity : "0",
             y: ButtonY,
           }}
         >
-          <motion.div className="flex flex-row gap-2">
+          <motion.div className="flex flex-col items-center sm:flex-row gap-2 w-full sm:w-auto">
             <button
-              className="p-[2px] rounded-3xl bg-gradient-to-r overflow-hidden from-pink-300 to-blue-300"
+              // className="w-[50%] sm:w-auto p-[2px] rounded-3xl bg-gradient-to-r overflow-hidden from-pink-300 to-blue-300"
+              className="w-[50%] sm:w-auto p-[2px] rounded-3xl overflow-hidden"
               onClick={() => document.getElementById("my_modal_1").showModal()}
             >
-              <div className="bg-white h-full w-full rounded-3xl p-2 transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-300 hover:to-blue-300">
-                <span className="relative z-10 text-[#386C5F] hover:text-white">
-                  PRODUCT CATALOG
+              <div
+                // className="flex items-center justify-center bg-white h-12 w-full rounded-3xl p-2 transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-300 hover:to-blue-300"
+                className="flex items-center justify-center h-12 w-full rounded-3xl p-2 transition-all duration-300 bg-[#F54845] hover:bg-[#ff4744c2] "
+              >
+                <span
+                  // className="relative z-10 text-[#386C5F] hover:text-white whitespace-nowrap"
+                  className="relative z-10 text-white hover:text-white whitespace-nowrap"
+                >
+                  TATTO SHOR PARTNER
                 </span>
               </div>
             </button>
             <dialog id="my_modal_1" className="modal">
-              <div className="modal-box w-[60%] md:w-[20%]">
+              <div className="modal-box w-11/12 max-w-md">
                 <form method="dialog">
-                  {/* if there is a button in form, it will close the modal */}
                   <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                     ✕
                   </button>
                 </form>
                 <div className="p-2">
-                  <Link href="tel:+123456789">
+                  <Link href="tel:+123456789" className="block">
                     <p className="py-4 rounded-2xl border border-[#7CD4B1] bg-[#e5fff5] text-center hover:underline">
                       0840439489
                     </p>
@@ -436,13 +442,22 @@ const ParallaxSection = () => {
               </div>
             </dialog>
 
-            <div className="p-[2px] rounded-3xl bg-gradient-to-r overflow-hidden from-pink-300 to-blue-300">
-              <Link href={'/catelog'}>
-                <button className="bg-white h-full w-full rounded-3xl p-2 transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-300 hover:to-blue-300">
-                  <span className="relative z-10 text-[#386C5F] hover:text-white">
-                    TATTO SHOR PARTNER
+            <div
+              // className="w-[50%] sm:w-auto p-[2px] rounded-3xl bg-gradient-to-r overflow-hidden from-pink-300 to-blue-300"
+              className="w-[50%] sm:w-auto p-[2px] rounded-3xl overflow-hidden"
+            >
+              <Link href="/catelog" className="block">
+                <div
+                  // className="flex items-center justify-center bg-white h-12 w-full rounded-3xl p-2 transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-300 hover:to-blue-300"
+                  className="flex items-center justify-center h-12 w-full rounded-3xl p-2 transition-all duration-300 bg-[#F54845] hover:bg-[#ff4744c2] "
+                >
+                  <span
+                    // className="relative z-10 text-[#386C5F] hover:text-white whitespace-nowrap"
+                    className="relative z-10 text-white hover:text-white whitespace-nowrap"
+                  >
+                    PRODUCT CATALOG
                   </span>
-                </button>
+                </div>
               </Link>
             </div>
           </motion.div>

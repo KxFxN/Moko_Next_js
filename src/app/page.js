@@ -120,7 +120,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <HowToUse />
+            {/* <HowToUse /> */}
           </div>
           {/* lg:bg-gradient-custom-lg */}
           <section className="margin-custom flex flex-col items-center bg-gradient-custom ">
@@ -319,7 +319,25 @@ export default function Page() {
                 width={30}
                 height={30}
               />
+              <Link href={"/about"}>About US</Link>
+            </li>
+            <li className="flex items-center gap-7 text-white text-xl">
+              <Image
+                src={"/image/vector/Vector.png"}
+                alt=""
+                width={30}
+                height={30}
+              />
               <Link href={"#review"}>REVIEWER</Link>
+            </li>
+            <li className="flex items-center gap-7 text-white text-xl">
+              <Image
+                src={"/image/vector/Vector.png"}
+                alt=""
+                width={30}
+                height={30}
+              />
+              <Link href={"#faq"}>FAQ</Link>
             </li>
             <li className="flex items-center gap-7 text-white text-xl">
               <Image

@@ -29,14 +29,14 @@ export default function Page() {
       <div className="px-5 md:px-10 lg:px-20 2xl:px-32">
         <main className="flex-grow">
           <div className="bg-[#57CE7F] relative overflow-hidden  min-h-screen -mx-5 md:-mx-10 lg:-mx-20 2xl:-mx-32">
-            <div className="flex flex-row items-center mb-10 absolute top-[4%] left-[5%] text-white">
+            <div className="flex flex-row text-sm items-center mb-10 absolute top-[11%] left-[5%] md:text-base md:top-[6%] md:left-[5%] lg:top-[4%] text-white">
               <Link href={"/"} className=" hover:text-gray-200">
                 หน้าแรก
               </Link>
               <MdKeyboardArrowRight size={20} />
               <p>PRODUCT CATALOG</p>
             </div>
-            <div className="flex items-center justify-between text-white mt-20 -mx-5 md:-mx-10 lg:-mx-20 2xl:-mx-32">
+            <div className="flex items-center justify-between text-white mt-28 -mx-5 md:-mx-10 lg:-mx-20 2xl:-mx-32">
               <Image
                 src={"/image/catelog/Vector.png"}
                 width={200}

@@ -401,7 +401,7 @@ const ParallaxSection = () => {
         </motion.div>
 
         <motion.div
-          className="absolute inset-0 flex items-end justify-center -bottom-16 sm:justify-end z-40 sm:right-[5vw] sm:bottom-[15vh] lg:right-[17vw] lg:bottom-0 xl:right-[22vw] xl:bottom-[5vh]"
+          className="absolute inset-0 flex items-end justify-center -bottom-16 sm:justify-end z-40 sm:right-[5vw] sm:bottom-[15vh] lg:right-[17vw] lg:bottom-0 xl:right-[22vw] xl:bottom-[0vh]"
           style={{
             opacity: isOpacity ? textOpacity : "0",
             y: ButtonY,
@@ -415,7 +415,7 @@ const ParallaxSection = () => {
             >
               <div
                 // className="flex items-center justify-center bg-white h-12 w-full rounded-3xl p-2 transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-300 hover:to-blue-300"
-                className="flex items-center justify-center h-12 w-full rounded-3xl p-2 transition-all duration-300 bg-[#F54845] hover:bg-[#04cf9b] "
+                className="flex items-center justify-center h-12 w-48 rounded-3xl p-2 transition-all duration-300 bg-[#F54845] hover:bg-[#04cf9b] "
               >
                 <span
                   // className="relative z-10 text-[#386C5F] hover:text-white whitespace-nowrap"
@@ -455,7 +455,7 @@ const ParallaxSection = () => {
               <Link href="/catelog" className="block">
                 <div
                   // className="flex items-center justify-center bg-white h-12 w-full rounded-3xl p-2 transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-300 hover:to-blue-300"
-                  className="flex items-center justify-center h-12 w-full rounded-3xl p-2 transition-all duration-300 bg-[#F54845] hover:bg-[#04cf9b] "
+                  className="flex items-center justify-center h-12 w-48 rounded-3xl p-2 transition-all duration-300 bg-[#F54845] hover:bg-[#04cf9b] "
                 >
                   <span
                     // className="relative z-10 text-[#386C5F] hover:text-white whitespace-nowrap"

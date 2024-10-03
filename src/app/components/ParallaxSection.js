@@ -435,7 +435,7 @@ const ParallaxSection = () => {
                   // className="relative z-10 text-[#386C5F] hover:text-white whitespace-nowrap"
                   className="relative z-10 text-white hover:text-white whitespace-nowrap"
                 >
-                  TATTO SHOR PARTNER
+                  TATTO SHOP PARTNER
                 </span>
               </div>
             </button>

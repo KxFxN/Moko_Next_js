@@ -25,6 +25,20 @@ const ParallaxSection = () => {
     threshold: 0.1,
   });
 
+  const [phoneNumber] = useState("0840439489");
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    setIsClicked(true);
+    window.location.href = `tel:${phoneNumber}`;
+
+    // Reset the clicked state after a short delay
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 100);
+  };
+
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start start", "end start"],
@@ -433,13 +447,21 @@ const ParallaxSection = () => {
                   </button>
                 </form>
                 <div className="p-2 space-y-4">
-                  <Link href="tel:0840439489" className="block">
+                  <Link
+                    href={`tel:${phoneNumber}`}
+                    onClick={handleClick}
+                    className="block"
+                  >
                     <p className="py-4 rounded-2xl border border-[#7CD4B1] bg-[#e5fff5] text-center hover:underline">
                       0840439489
                     </p>
                   </Link>
 
-                  <Link href="tel:0840439489" className="block w-[60%] m-auto ">
+                  <Link
+                    href={`tel:${phoneNumber}`}
+                    onClick={handleClick}
+                    className="block w-[60%] m-auto "
+                  >
                     <p className="py-3 rounded-full border bg-[#629C85] text-white text-center">
                       โทร
                     </p>

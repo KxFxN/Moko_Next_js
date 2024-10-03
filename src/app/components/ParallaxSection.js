@@ -415,7 +415,7 @@ const ParallaxSection = () => {
             >
               <div
                 // className="flex items-center justify-center bg-white h-12 w-full rounded-3xl p-2 transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-300 hover:to-blue-300"
-                className="flex items-center justify-center h-12 w-full rounded-3xl p-2 transition-all duration-300 bg-[#F54845] hover:bg-[#ff4744c2] "
+                className="flex items-center justify-center h-12 w-full rounded-3xl p-2 transition-all duration-300 bg-[#F54845] hover:bg-[#04cf9b] "
               >
                 <span
                   // className="relative z-10 text-[#386C5F] hover:text-white whitespace-nowrap"
@@ -432,10 +432,16 @@ const ParallaxSection = () => {
                     ✕
                   </button>
                 </form>
-                <div className="p-2">
-                  <Link href="tel:+123456789" className="block">
+                <div className="p-2 space-y-4">
+                  <Link href="tel:0840439489" className="block">
                     <p className="py-4 rounded-2xl border border-[#7CD4B1] bg-[#e5fff5] text-center hover:underline">
                       0840439489
+                    </p>
+                  </Link>
+
+                  <Link href="tel:0840439489" className="block w-[60%] m-auto ">
+                    <p className="py-3 rounded-full border bg-[#629C85] text-white text-center">
+                      โทร
                     </p>
                   </Link>
                 </div>
@@ -449,7 +455,7 @@ const ParallaxSection = () => {
               <Link href="/catelog" className="block">
                 <div
                   // className="flex items-center justify-center bg-white h-12 w-full rounded-3xl p-2 transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-300 hover:to-blue-300"
-                  className="flex items-center justify-center h-12 w-full rounded-3xl p-2 transition-all duration-300 bg-[#F54845] hover:bg-[#ff4744c2] "
+                  className="flex items-center justify-center h-12 w-full rounded-3xl p-2 transition-all duration-300 bg-[#F54845] hover:bg-[#04cf9b] "
                 >
                   <span
                     // className="relative z-10 text-[#386C5F] hover:text-white whitespace-nowrap"

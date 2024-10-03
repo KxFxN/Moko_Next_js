@@ -1,5 +1,5 @@
-'use client'
-import React,{useCallback} from "react";
+"use client";
+import React, { useCallback } from "react";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,7 +18,7 @@ export default function AboutUs() {
         behavior: "smooth",
       });
     }
-  }
+  };
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
@@ -42,12 +42,12 @@ export default function AboutUs() {
             <div className="space-y-16 md:ml-16 lg:ml-20 ">
               <div className="text-[#629c85]">
                 <p className=" text-lg leading-relaxed indent-16">
-                  Moko Thailand ครีมนวนรอยสัก ออกแบบมาเพื่อดูแลรอยสักโดยเฉพาะ
-                  และคืนความอ่อนเยาว์ ด้วยส่วนผสมวิชันเป็นเอกลักษณ์เฉพาะตัว
-                  และยังช่วยลดการระคายเคืองผิว ที่เกิดจากกระบวนการสัก
-                  การสักหลายสไตล์ สักนำโรค ๆ รอยสักที่เป็นความทรงจำ ครอบครัว
-                  ความรัก และเราก็ลูกค้า ชาย หญิง รวมถึง LGBTQ
-                  เราสนับสนุนการสมรสเท่าเทียม
+                  Moko Thailand ครีมถนอมรอยสัก ออกแบบมาเพื่อดูแลรอยสักโดยเฉพาะ
+                  และคืนความอ่อนเยาว์ ด้วยส่วนผสมอันเป็นเอกลักษณ์เฉพาะตัว
+                  และยังช่วยลด การระคายเคืองผิว ที่เกิดจากกระบวนการสัก
+                  การสักหลายสไตล์ สักน่ารัก ๆ รอยสักที่เป็นความทรงจํา ครอบครัว
+                  ความรัก และกลุ่มลูกค้า ชาย หญิง รวมถึง LGBTQ
+                  เราสนับสนุนการสมรสเท่าเทียม สักนำโรค น่ากลัวมากพรี่
                 </p>
               </div>
               <div className="relative">
